@@ -78,20 +78,25 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     ├── techniques/                   # Phân hệ tra cứu nhanh kỹ thuật BABOK V3 theo mục đích sử dụng.
     │   ├── quick-reference.md        # Bảng tra cứu gọn gàng 50 kỹ thuật: ID | Name | When to Use | KA.
     │   ├── by-situation.md           # Hướng dẫn chọn kỹ thuật phù hợp theo tình huống thực tế của doanh nghiệp.
-    │   └── top-15/                   # Tài liệu hướng dẫn thực thi chuyên sâu cho 15 kỹ thuật phổ biến nhất.
+    │   └── top-20/                   # Tài liệu hướng dẫn thực thi chuyên sâu cho 20 kỹ thuật cốt lõi và phổ biến nhất.
     │       ├── 10.01-acceptance-and-evaluation-criteria.md  # Tiêu chí nghiệm thu và đánh giá.
     │       ├── 10.07-business-cases.md                      # Lập Business Cases tài chính.
     │       ├── 10.08-business-model-canvas.md               # Mô hình kinh doanh Canvas.
     │       ├── 10.09-business-rules-analysis.md             # Phân tích Luật kinh doanh.
     │       ├── 10.12-data-dictionary.md                     # Từ điển dữ liệu.
     │       ├── 10.13-data-flow-diagrams.md                  # Sơ đồ luồng dữ liệu (DFD).
+    │       ├── 10.15-data-modelling.md                      # Mô hình hóa dữ liệu (ERD).
     │       ├── 10.17-decision-modelling.md                  # Mô hình hóa quyết định.
     │       ├── 10.18-document-analysis.md                   # Phân tích tài liệu sẵn có.
+    │       ├── 10.20-financial-analysis.md                  # Phân tích tài chính (ROI, Cost-Benefit).
     │       ├── 10.24-interface-analysis.md                  # Phân tích giao tiếp hệ thống.
     │       ├── 10.30-non-functional-requirements-analysis.md # Phân tích yêu cầu phi chức năng (NFR).
+    │       ├── 10.34-process-analysis.md                    # Phân tích và tối ưu quy trình.
     │       ├── 10.35-process-modelling.md                   # Sơ đồ quy trình nghiệp vụ.
     │       ├── 10.40-root-cause-analysis.md                 # Phân tích nguyên nhân gốc rễ (5 Whys, Fishbone).
+    │       ├── 10.41-scope-modelling.md                     # Mô hình hóa phạm vi (Context Diagram).
     │       ├── 10.43-stakeholder-list-map-or-personas.md    # Phân tích và lập bản đồ Stakeholders.
+    │       ├── 10.44-state-modelling.md                     # Mô hình hóa trạng thái (State Diagram).
     │       ├── 10.47-use-cases-and-scenarios.md             # Đặc tả Use Cases và kịch bản nghiệp vụ.
     │       └── 10.48-user-stories.md                        # Viết và quản lý User Stories chuẩn Agile.
     │

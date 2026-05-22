@@ -61,22 +61,27 @@ Follow this decision tree based on the user's request to navigate to the correct
 ### B. Diagnostics & Technique Selection (Techniques)
 *   "Which technique should I use for this situation?" (Situation Diagnosis) → `references/techniques/by-situation.md`
 *   Quick lookup for technique purposes, IDs, and KAs → `references/techniques/quick-reference.md`
-*   Deep-dive execution guidelines for specific techniques → `references/techniques/top-15/`
-    *   10.01 (Acceptance and Evaluation Criteria) → `references/techniques/top-15/10.01-acceptance-and-evaluation-criteria.md`
-    *   10.07 (Business Cases) → `references/techniques/top-15/10.07-business-cases.md`
-    *   10.08 (Business Model Canvas) → `references/techniques/top-15/10.08-business-model-canvas.md`
-    *   10.09 (Business Rules Analysis) → `references/techniques/top-15/10.09-business-rules-analysis.md`
-    *   10.12 (Data Dictionary) → `references/techniques/top-15/10.12-data-dictionary.md`
-    *   10.13 (Data Flow Diagrams) → `references/techniques/top-15/10.13-data-flow-diagrams.md`
-    *   10.17 (Decision Modelling) → `references/techniques/top-15/10.17-decision-modelling.md`
-    *   10.18 (Document Analysis) → `references/techniques/top-15/10.18-document-analysis.md`
-    *   10.24 (Interface Analysis) → `references/techniques/top-15/10.24-interface-analysis.md`
-    *   10.30 (Non-Functional Requirements Analysis) → `references/techniques/top-15/10.30-non-functional-requirements-analysis.md`
-    *   10.35 (Process Modelling) → `references/techniques/top-15/10.35-process-modelling.md`
-    *   10.40 (Root Cause Analysis) → `references/techniques/top-15/10.40-root-cause-analysis.md`
-    *   10.43 (Stakeholder List, Map, or Personas) → `references/techniques/top-15/10.43-stakeholder-list-map-or-personas.md`
-    *   10.47 (Use Cases and Scenarios) → `references/techniques/top-15/10.47-use-cases-and-scenarios.md`
-    *   10.48 (User Stories) → `references/techniques/top-15/10.48-user-stories.md`
+*   Deep-dive execution guidelines for specific techniques → `references/techniques/top-20/`
+    *   10.01 (Acceptance and Evaluation Criteria) → `references/techniques/top-20/10.01-acceptance-and-evaluation-criteria.md`
+    *   10.07 (Business Cases) → `references/techniques/top-20/10.07-business-cases.md`
+    *   10.08 (Business Model Canvas) → `references/techniques/top-20/10.08-business-model-canvas.md`
+    *   10.09 (Business Rules Analysis) → `references/techniques/top-20/10.09-business-rules-analysis.md`
+    *   10.12 (Data Dictionary) → `references/techniques/top-20/10.12-data-dictionary.md`
+    *   10.13 (Data Flow Diagrams) → `references/techniques/top-20/10.13-data-flow-diagrams.md`
+    *   10.15 (Data Modelling) → `references/techniques/top-20/10.15-data-modelling.md`
+    *   10.17 (Decision Modelling) → `references/techniques/top-20/10.17-decision-modelling.md`
+    *   10.18 (Document Analysis) → `references/techniques/top-20/10.18-document-analysis.md`
+    *   10.20 (Financial Analysis) → `references/techniques/top-20/10.20-financial-analysis.md`
+    *   10.24 (Interface Analysis) → `references/techniques/top-20/10.24-interface-analysis.md`
+    *   10.30 (Non-Functional Requirements Analysis) → `references/techniques/top-20/10.30-non-functional-requirements-analysis.md`
+    *   10.34 (Process Analysis) → `references/techniques/top-20/10.34-process-analysis.md`
+    *   10.35 (Process Modelling) → `references/techniques/top-20/10.35-process-modelling.md`
+    *   10.40 (Root Cause Analysis) → `references/techniques/top-20/10.40-root-cause-analysis.md`
+    *   10.41 (Scope Modelling) → `references/techniques/top-20/10.41-scope-modelling.md`
+    *   10.43 (Stakeholder List, Map, or Personas) → `references/techniques/top-20/10.43-stakeholder-list-map-or-personas.md`
+    *   10.44 (State Modelling) → `references/techniques/top-20/10.44-state-modelling.md`
+    *   10.47 (Use Cases and Scenarios) → `references/techniques/top-20/10.47-use-cases-and-scenarios.md`
+    *   10.48 (User Stories) → `references/techniques/top-20/10.48-user-stories.md`
 
 ### C. Dependency and Traceability Lookup (Dependencies)
 *   "Where does this document come from? (Inputs)" → `references/dependencies/input-catalog.md`
@@ -127,10 +132,10 @@ When the user requests exporting to Microsoft Office formats ("Export", "Generat
 
 ---
 
-## 7. Non-Top 15 Fallback & Elicitation Interview Rule
+## 7. Non-Top 20 Fallback & Elicitation Interview Rule
 
-> **🤖 AI AGENT INSTRUCTION (NON-TOP 15 FALLBACK):**
-> When a task requires a technique outside the Top 15:
+> **🤖 AI AGENT INSTRUCTION (NON-TOP 20 FALLBACK):**
+> When a task requires a technique outside the Top 20:
 > 1. **Lookup Catalog:** Consult `references/techniques/quick-reference.md` to identify its exact ID, Purpose, KA, and Key Artifact.
 > 2. **Declare to User:** Inform the user which technique is being used and explain why it is optimal for the current context.
 > 3. **Initiate Elicitation Interview (AI-to-User Elicitation Session):**

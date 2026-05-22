@@ -9,23 +9,28 @@ description: "BABOK V3 compact lookup: 50 techniques with ID, purpose, KA mappin
 > - **When to Use:** Scan this column for intent matching (keyword → trigger recognition).
 > - **KAs:** Knowledge Areas that predominantly use this technique (3=Planning, 4=Elicitation, 5=Lifecycle, 6=Strategy, 7=Analysis/Design, 8=Evaluation).
 > - **Key Artifact:** Primary output produced when applying this technique. Use to link technique → deliverable.
-> - **Deep Dive (Top 15 Only):** Load the corresponding file in `references/techniques/top-15/` using this mapping:
+> - **Deep Dive (Top 20 Only):** Load the corresponding file in `references/techniques/top-20/` using this mapping:
 >   - **10.01 (Acceptance and Evaluation Criteria):** `10.01-acceptance-and-evaluation-criteria.md`
 >   - **10.07 (Business Cases):** `10.07-business-cases.md`
 >   - **10.08 (Business Model Canvas):** `10.08-business-model-canvas.md`
 >   - **10.09 (Business Rules Analysis):** `10.09-business-rules-analysis.md`
 >   - **10.12 (Data Dictionary):** `10.12-data-dictionary.md`
 >   - **10.13 (Data Flow Diagrams):** `10.13-data-flow-diagrams.md`
+>   - **10.15 (Data Modelling):** `10.15-data-modelling.md`
 >   - **10.17 (Decision Modelling):** `10.17-decision-modelling.md`
 >   - **10.18 (Document Analysis):** `10.18-document-analysis.md`
+>   - **10.20 (Financial Analysis):** `10.20-financial-analysis.md`
 >   - **10.24 (Interface Analysis):** `10.24-interface-analysis.md`
 >   - **10.30 (Non-Functional Req Analysis):** `10.30-non-functional-requirements-analysis.md`
+>   - **10.34 (Process Analysis):** `10.34-process-analysis.md`
 >   - **10.35 (Process Modelling):** `10.35-process-modelling.md`
 >   - **10.40 (Root Cause Analysis):** `10.40-root-cause-analysis.md`
+>   - **10.41 (Scope Modelling):** `10.41-scope-modelling.md`
 >   - **10.43 (Stakeholder List, Map, Personas):** `10.43-stakeholder-list-map-or-personas.md`
+>   - **10.44 (State Modelling):** `10.44-state-modelling.md`
 >   - **10.47 (Use Cases and Scenarios):** `10.47-use-cases-and-scenarios.md`
 >   - **10.48 (User Stories):** `10.48-user-stories.md`
-> - **Non-Top-15 Fallback & Interview Rule:** If a technique outside the Top 15 is required:
+> - **Non-Top-20 Fallback & Interview Rule:** If a technique outside the Top 20 is required:
 >   1. Identify its ID and Purpose in this table.
 >   2. Declare to the user: "I will apply [Technique Name] (ID: 10.xx) for this task."
 >   3. Initiate the **AI-to-User Interview Session** by asking 3-5 targeted elicitation questions based on the technique's objective and key artifact. Do NOT attempt to generate the artifact without user inputs.

@@ -20,7 +20,7 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 *   **Diagnosis:** You lack a comprehensive strategy for identifying and engaging stakeholders.
 *   **KA & Task:** [KA03 - Task 3.2: Plan Stakeholder Engagement](../ka/ka03-planning/tasks.md)
 *   **Recommended Techniques:** 
-    *   [Stakeholder List, Map, or Personas](../techniques/top-15/10.43-stakeholder-list-map-or-personas.md) (Primary — to categorize influence and impact)
+    *   [Stakeholder List, Map, or Personas](../techniques/top-20/10.43-stakeholder-list-map-or-personas.md) (Primary — to categorize influence and impact)
     *   [Interviews](../techniques/quick-reference.md) (Common Secondary — to elicit individual expectations)
 
 ## 2. The "War Room" Scenario
@@ -39,7 +39,7 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 *   **KA & Task:** KA05 - Task 5.3: Prioritize Requirements & Task 5.4: Assess Requirements Changes *(Future Scope)*
 *   **Recommended Techniques:** 
     *   [Backlog Management](../techniques/quick-reference.md) (Primary — to strictly sequence incoming work items)
-    *   [Financial Analysis](../techniques/quick-reference.md) (Primary — to evaluate the ROI and demonstrate the opportunity cost of the new features)
+    *   [Financial Analysis](../techniques/top-20/10.20-financial-analysis.md) (Primary — to evaluate the ROI and demonstrate the opportunity cost of the new features)
 
 ## 4. The "Treating the Symptom, Not the Disease" Scenario
 
@@ -47,8 +47,8 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 *   **Diagnosis:** The initiative is prematurely jumping to a solution definition without properly analyzing the core business need or the root cause of the current dysfunction.
 *   **KA & Task:** [KA06 - Task 6.1: Analyze Current State](../ka/ka06-strategy/tasks.md)
 *   **Recommended Techniques:** 
-    *   [Root Cause Analysis](../techniques/top-15/10.40-root-cause-analysis.md) (Primary — to determine if the failure stems from broken processes rather than software)
-    *   [Document Analysis](../techniques/top-15/10.18-document-analysis.md) (Primary — to evaluate the true deficiencies of the existing system)
+    *   [Root Cause Analysis](../techniques/top-20/10.40-root-cause-analysis.md) (Primary — to determine if the failure stems from broken processes rather than software)
+    *   [Document Analysis](../techniques/top-20/10.18-document-analysis.md) (Primary — to evaluate the true deficiencies of the existing system)
 
 ## 5. The "Unverifiable Dream" Scenario
 
@@ -56,7 +56,7 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 *   **Diagnosis:** The documented requirements lack the characteristics of quality (specifically, being Unambiguous and Testable). You bypassed the requirement verification step.
 *   **KA & Task:** [KA07 - Task 7.2: Verify Requirements](../ka/ka07-radd/tasks.md)
 *   **Recommended Techniques:** 
-    *   [Acceptance and Evaluation Criteria](../techniques/top-15/10.01-acceptance-and-evaluation-criteria.md) (Primary — to translate vague desires into quantifiable, testable metrics)
+    *   [Acceptance and Evaluation Criteria](../techniques/top-20/10.01-acceptance-and-evaluation-criteria.md) (Primary — to translate vague desires into quantifiable, testable metrics)
     *   [Reviews](../techniques/quick-reference.md) (Primary — to conduct peer inspections with Implementation SMEs)
 
 ## 6. The "Ghost Town" Scenario

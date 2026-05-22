@@ -17,7 +17,7 @@ This repository transforms standard AI models into an expert, high-touch, C-leve
 *   **📂 File Priority Routing:** A rigid hierarchical file lookup rule that guides the AI Agent to establish strategic context, verify task purposes, review gotchas, and consult templates in sequence.
 *   **📁 Premium Document Generation:** Integrated python-docx style engine designed to convert standard markdown analyses into highly formatted, corporate-styled Word deliverables (using executive navy palettes, thick left-bordered callout boxes, and clean zebra-striped tables).
 *   **📚 Comprehensive BABOK v3 Map:** Mapped coverage across **Business Analysis Planning & Monitoring (KA3)**, **Elicitation & Collaboration (KA4)**, **Strategy Analysis (KA6)**, and **Requirements Analysis & Design Definition (KA7)**.
-*   **🛠️ Top-15 Technique deep-dives:** Practical step-by-step execution guidelines for the top 15 BABOK techniques (such as Business Cases, Use Cases, Process Modelling, Decision Modelling, and Interface Analysis).
+*   **🛠️ Top-20 Technique deep-dives:** Practical step-by-step execution guidelines for the top 20 core BABOK techniques (such as Business Cases, Data Modelling, Process Modelling, Interface Analysis, and Financial Analysis).
 
 ---
 
@@ -46,7 +46,7 @@ babok-ba-assistant/
     ├── 📁 scripts/             # Beautiful Office export and layout utilities
     │
     ├── 📁 techniques/          # Situation-based technique selectors & deep dives
-    │   └── 📁 top-15/          # Detailed execution guides for 15 primary techniques
+    │   └── 📁 top-20/          # Detailed execution guides for 20 core techniques
     │
     └── 📁 templates/           # BABOK-standard markdown templates for deliverables
         ├── 📁 ka03/            # BA Approach, Engagement, Information templates

@@ -6,7 +6,7 @@ description: Technique usage mapping for KA07 Requirements Analysis and Design D
 
 > **🤖 AI AGENT INSTRUCTION (3-TIER HYBRID LOOKUP):**
 > *   **Primary & Common Secondary:** Use the "Used to..." text to explain WHY a technique fits the specification, modeling, or validation context.
->     *  If asked HOW to execute a top-15 technique, load `references/techniques/top-15/[ID]-[technique-name].md` directly.
+>     *  If asked HOW to execute a top-20 technique, load `references/techniques/top-20/[ID]-[technique-name].md` directly.
 > *   **Diagnostic:** If the user presents a modeling symptom (e.g., "I need to show how the system reacts to a user click", "I need to map data entities"), you MUST load `references/techniques/by-situation.md` first to identify the correct technique (e.g., Sequence Diagram vs. Data Modeling).
 
 ---

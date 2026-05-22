@@ -6,7 +6,7 @@ description: Technique usage mapping for KA04 Elicitation and Collaboration (Tas
 
 > **🤖 AI AGENT INSTRUCTION (3-TIER HYBRID LOOKUP):** 
 > *   **Primary & Common Secondary:** Use the "Used to..." text to explain WHY a technique fits the elicitation/collaboration context.
->     *  If asked HOW to execute a top-15 technique, load `references/techniques/top-15/[ID]-[technique-name].md` directly.
+>     *  If asked HOW to execute a top-20 technique, load `references/techniques/top-20/[ID]-[technique-name].md` directly.
 > *   **Diagnostic:** If the user presents an elicitation symptom (e.g., "Stakeholders are too busy", "I need to confirm meeting notes"), you MUST load `references/techniques/by-situation.md` first to identify the correct technique before advising.
 
 ---

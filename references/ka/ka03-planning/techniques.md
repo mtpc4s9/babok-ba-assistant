@@ -6,8 +6,8 @@ description: Technique usage mapping for KA03 Business Analysis Planning and Mon
 
 > **🤖 AI AGENT INSTRUCTION (3-TIER HYBRID LOOKUP):**
 > *   **Primary & Common Secondary:** Use the "Used to..." text to explain WHY a technique fits the planning context.
->     *   If asked HOW to execute a top-15 technique, load `references/techniques/top-15/[ID]-[technique-name].md` directly.
->     *   For non-top-15 techniques, consult `references/techniques/quick-reference.md` for their purpose.
+>     *   If asked HOW to execute a top-20 technique, load `references/techniques/top-20/[ID]-[technique-name].md` directly.
+>     *   For non-top-20 techniques, consult `references/techniques/quick-reference.md` for their purpose.
 > *   **Diagnostic:** If the user presents a planning symptom (e.g., "I don't know who has the authority to sign off", "Requirements keep changing"), you MUST load `references/techniques/by-situation.md` first to identify the correct technique before advising.
 
 ---
