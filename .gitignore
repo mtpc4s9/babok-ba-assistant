@@ -1,0 +1,11 @@
+# Ignore all files and folders by default in this workspace
+*
+
+# Allow the specific whitelisted items
+!SKILL.md
+!new_architecture.md
+!references/
+!references/**
+
+# Allow .gitignore itself
+!.gitignore
