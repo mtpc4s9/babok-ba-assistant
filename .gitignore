@@ -4,6 +4,7 @@
 # Allow the specific whitelisted items
 !SKILL.md
 !new_architecture.md
+!README.md
 !references/
 !references/**
 
