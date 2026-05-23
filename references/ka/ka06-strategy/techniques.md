@@ -6,7 +6,7 @@ description: Technique usage mapping for KA06 Strategy Analysis (Tasks 6.1-6.4) 
 
 > **🤖 AI AGENT INSTRUCTION (3-TIER HYBRID LOOKUP):**
 > *   **Primary & Common Secondary:** Use the "Used to..." text to explain WHY a technique fits the strategic context.
->     - If asked HOW to execute a top-20 technique, load `references/techniques/top-20/[ID]-[technique-name-kebab-case].md` directly.
+>     - If asked HOW to execute a top-20 technique, load `references/techniques/top-20/[ID]-[technique-name-kebab-case].md` (or `references/techniques/top-20/[ID]-[technique-name-kebab-case]/README.md` if it is structured as a folder) directly.
 >     - For non-top-20 techniques, consult `references/techniques/quick-reference.md` for their purpose and KAs.
 > *   **Diagnostic:** If the user presents a strategic symptom (e.g., "Should we buy or build?", "We are losing market share"), MUST load `references/techniques/by-situation.md` first to identify the correct strategic technique before advising.
 

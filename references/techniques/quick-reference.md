@@ -28,8 +28,8 @@ description: "BABOK V3 compact lookup: 50 techniques with ID, purpose, KA mappin
 >   - **10.41 (Scope Modelling):** `10.41-scope-modelling.md`
 >   - **10.43 (Stakeholder List, Map, Personas):** `10.43-stakeholder-list-map-or-personas.md`
 >   - **10.44 (State Modelling):** `10.44-state-modelling.md`
->   - **10.47 (Use Cases and Scenarios):** `10.47-use-cases-and-scenarios.md`
->   - **10.48 (User Stories):** `10.48-user-stories.md`
+>   - **10.47 (Use Cases and Scenarios):** `10.47-use-cases-and-scenarios/README.md`
+>   - **10.48 (User Stories):** `10.48-user-stories/README.md`
 > - **Non-Top-20 Fallback & Interview Rule:** If a technique outside the Top 20 is required:
 >   1. Identify its ID and Purpose in this table.
 >   2. Declare to the user: "I will apply [Technique Name] (ID: 10.xx) for this task."

@@ -80,8 +80,8 @@ Follow this decision tree based on the user's request to navigate to the correct
     *   10.41 (Scope Modelling) → `references/techniques/top-20/10.41-scope-modelling.md`
     *   10.43 (Stakeholder List, Map, or Personas) → `references/techniques/top-20/10.43-stakeholder-list-map-or-personas.md`
     *   10.44 (State Modelling) → `references/techniques/top-20/10.44-state-modelling.md`
-    *   10.47 (Use Cases and Scenarios) → `references/techniques/top-20/10.47-use-cases-and-scenarios.md`
-    *   10.48 (User Stories) → `references/techniques/top-20/10.48-user-stories.md`
+    *   10.47 (Use Cases and Scenarios) → `references/techniques/top-20/10.47-use-cases-and-scenarios/README.md`
+    *   10.48 (User Stories) → `references/techniques/top-20/10.48-user-stories/README.md`
 
 ### C. Dependency and Traceability Lookup (Dependencies)
 *   "Where does this document come from? (Inputs)" → `references/dependencies/input-catalog.md`
