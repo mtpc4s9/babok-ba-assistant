@@ -75,7 +75,7 @@ Follow this decision tree based on the user's request to navigate to the correct
     *   10.24 (Interface Analysis) → `references/techniques/top-20/10.24-interface-analysis.md`
     *   10.30 (Non-Functional Requirements Analysis) → `references/techniques/top-20/10.30-non-functional-requirements-analysis.md`
     *   10.34 (Process Analysis) → `references/techniques/top-20/10.34-process-analysis.md`
-    *   10.35 (Process Modelling) → `references/techniques/top-20/10.35-process-modelling.md`
+    *   10.35 (Process Modelling) → `references/techniques/top-20/10.35-process-modelling/README.md`
     *   10.40 (Root Cause Analysis) → `references/techniques/top-20/10.40-root-cause-analysis.md`
     *   10.41 (Scope Modelling) → `references/techniques/top-20/10.41-scope-modelling.md`
     *   10.43 (Stakeholder List, Map, or Personas) → `references/techniques/top-20/10.43-stakeholder-list-map-or-personas.md`

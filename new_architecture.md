@@ -92,7 +92,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │       ├── 10.24-interface-analysis.md                  # Phân tích giao tiếp hệ thống.
     │       ├── 10.30-non-functional-requirements-analysis.md # Phân tích yêu cầu phi chức năng (NFR).
     │       ├── 10.34-process-analysis.md                    # Phân tích và tối ưu quy trình.
-    │       ├── 10.35-process-modelling.md                   # Sơ đồ quy trình nghiệp vụ.
+    │       ├── 10.35-process-modelling/                     # Thư mục kỹ năng sơ đồ quy trình nghiệp vụ.
     │       ├── 10.40-root-cause-analysis.md                 # Phân tích nguyên nhân gốc rễ (5 Whys, Fishbone).
     │       ├── 10.41-scope-modelling.md                     # Mô hình hóa phạm vi (Context Diagram).
     │       ├── 10.43-stakeholder-list-map-or-personas.md    # Phân tích và lập bản đồ Stakeholders.

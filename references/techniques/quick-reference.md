@@ -23,7 +23,7 @@ description: "BABOK V3 compact lookup: 50 techniques with ID, purpose, KA mappin
 >   - **10.24 (Interface Analysis):** `10.24-interface-analysis.md`
 >   - **10.30 (Non-Functional Req Analysis):** `10.30-non-functional-requirements-analysis.md`
 >   - **10.34 (Process Analysis):** `10.34-process-analysis.md`
->   - **10.35 (Process Modelling):** `10.35-process-modelling.md`
+>   - **10.35 (Process Modelling):** `10.35-process-modelling/README.md`
 >   - **10.40 (Root Cause Analysis):** `10.40-root-cause-analysis.md`
 >   - **10.41 (Scope Modelling):** `10.41-scope-modelling.md`
 >   - **10.43 (Stakeholder List, Map, Personas):** `10.43-stakeholder-list-map-or-personas.md`
