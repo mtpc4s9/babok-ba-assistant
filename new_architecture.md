@@ -15,14 +15,6 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
 ├── SKILL.md                          # Trọng tâm điều hướng (Decision tree), quy tắc Tollgate, phản hồi chuẩn hóa & Office Export rules.
 ├── new_architecture.md               # Bản đồ cấu trúc và tài liệu kiến trúc thực tế (File này).
 │
-├── templates/                        # [Cục bộ/Phụ trợ] Thư mục chứa các mẫu văn bản Word (.docx) dùng để xuất báo cáo.
-│   ├── BA_Planning_Template.docx
-│   ├── Business_Case_Template_BABOK_V3_Executive.docx
-│   ├── Change_Strategy_and_Solution_Scope_Template_BABOK_V3.docx
-│   ├── Current_State_Description_Template_BABOK_V3.docx
-│   ├── Future_State_Description_Template_BABOK_V3.docx
-│   └── Risk_Analysis_Results_Template_BABOK_V3.docx
-│
 └── references/                       # [Lõi Skill] Thư mục chứa toàn bộ tri thức, quy trình, kỹ thuật và mẫu Markdown di động.
     │
     ├── ka/                           # Các Knowledge Areas (KA) đã được chuẩn hóa. Mỗi KA gồm đúng 6 files đồng nhất.
@@ -128,12 +120,15 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   ├── risk-analysis-results.md                    # Đánh giá và quản trị rủi ro chiến lược (Task 6.3)
     │   │   └── solution-scope.md                           # Xác định phạm vi giải pháp (In-scope/Out-of-scope).
     │   │
-    │   └── ka07/                     # Templates phân tích yêu cầu & thiết kế giải pháp (KA7 - Trái tim của BA Works)
-    │       ├── design-options.md                           # Xác định và phân bổ các phương án thiết kế (Task 7.5)
-    │       ├── requirements-architecture.md                # Kiến trúc yêu cầu (Process, Data, Role Views) (Task 7.4)
-    │       ├── requirements-quality-audit.md               # [Gộp 7.2 & 7.3] QA/QC tự audit chất lượng yêu cầu (Verify & Validate).
-    │       ├── solution-recommendation.md                  # Đề xuất giải pháp tối ưu (Thiết kế dạng Slide Pitch cực kỳ ngắn gọn cho Sếp).
-    │       └── specified-modelled-requirements.md          # Đặc tả yêu cầu kỹ thuật thô sau mô hình hóa (Task 7.1)
+    │   ├── ka07/                     # Templates phân tích yêu cầu & thiết kế giải pháp (KA7 - Trái tim của BA Works)
+    │   │   ├── design-options.md                           # Xác định và phân bổ các phương án thiết kế (Task 7.5)
+    │   │   ├── requirements-architecture.md                # Kiến trúc yêu cầu (Process, Data, Role Views) (Task 7.4)
+    │   │   ├── requirements-quality-audit.md               # [Gộp 7.2 & 7.3] QA/QC tự audit chất lượng yêu cầu (Verify & Validate).
+    │   │   ├── solution-recommendation.md                  # Đề xuất giải pháp tối ưu (Thiết kế dạng Slide Pitch cực kỳ ngắn gọn cho Sếp).
+    │   │   └── specified-modelled-requirements.md          # Đặc tả yêu cầu kỹ thuật thô sau mô hình hóa (Task 7.1)
+    │   │
+    │   └── shared/                   # Các mẫu chia sẻ dùng chung giữa các KA (Cross-cutting Templates)
+    │       └── business-rules-catalog.md                   # Từ điển/Mục lục luật kinh doanh tập trung (decoupled) (Technique 10.9)
     │
     ├── advisor/                      # Phân hệ cố vấn và điều phối thông minh của AI Agent.
     │   ├── readiness-check.md        # 🚨 MANDATORY Tollgate Checklist. Agent tự chạy trước khi sinh bất kỳ tài liệu nào.

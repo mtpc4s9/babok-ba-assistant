@@ -24,6 +24,7 @@ Before generating content, verify the availability of the following input data e
 
 *   [ ] **[Primary Input]** Elicitation Results (Task 4.2/4.3) -> Raw stakeholder findings, meeting notes, and observations.
 *   [ ] **[Primary Input]** Solution Scope (Task 6.4) -> Defines what is in-scope and out-of-scope.
+*   [ ] **[Shared Input]** Business Rules Catalog (shared/business-rules-catalog.md) -> The single source of truth for decoupled business rules.
 
 ---
 
@@ -37,11 +38,12 @@ Before generating content, verify the availability of the following input data e
 
 ## 2. Specific Requirements (Functional & Behavioural)
 > **🤖 AI AGENT INSTRUCTION:** Parse the elicitation notes and generate *Atomic, Complete, Concise, and Testable* (BABOK 7.2.4) functional requirements. Structure this as a Matrix (Table) mapping directly to the features requested.
+> **⚠️ DECOUPLING RULE:** Do not write business rules inline in the requirement description. All business rules must refer to an absolute RU-ID in `shared/business-rules-catalog.md` (e.g., `RU-04`).
 
 | Req ID | Feature/Function | Description (The 'What') | Associated Business Rule | Acceptance Criteria (Testable) |
 | :--- | :--- | :--- | :--- | :--- |
-| **[FR-USR-01]** | [e.g., Add Instruction] | [INSERT: "The system shall allow authorized EcO2 users to create instructions with Subject, Header Image, and Content in multiple languages."] | [INSERT: "BR-01: Subject max length is 150 characters."] | [INSERT: "Given an authorized user, When required fields are filled and 'Publish' is clicked, Then the instruction appears at the top of the list."] |
-| **[INSERT]** | [INSERT] | [INSERT] | [INSERT] | [INSERT] |
+| **[FR-USR-01]** | [e.g., Add Instruction] | [INSERT: "The system shall allow authorized EcO2 users to create instructions with Subject, Header Image, and Content in multiple languages."] | `RU-04` (Subject max length is 150 characters) | [INSERT: "Given an authorized user, When required fields are filled and 'Publish' is clicked, Then the instruction appears at the top of the list."] |
+| **[INSERT]** | [INSERT] | [INSERT] | `RU-xx` | [INSERT] |
 
 ---
 

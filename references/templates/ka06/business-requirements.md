@@ -31,20 +31,46 @@ Before generating content, verify the availability of the following input data e
 
 ---
 
-## 1. Business Need (The "Why")
-> **🤖 AI AGENT INSTRUCTION:** Clearly articulate the business problem to be solved or the strategic opportunity to be exploited. Avoid proposing solutions. Describe the pain points in quantitative and qualitative terms based on the Current State Description.
+## 📋 ID CONVENTION REFERENCE
 
-*   **Problem/Opportunity Statement:** [INSERT: Problem Statement | A concise description of the strategic pain point, its operational impact, and the business risk of inaction (e.g., "The enterprise loses 15% of new signups due to a 3-minute registration bottleneck...") | Current State Description (Section 2)]
-*   **Strategic Driver:** [INSERT: Strategic Driver Narrative | The top-down corporate directive, bottom-up operational pain, or external regulatory/market driver triggering this need | Enterprise Strategy / Elicitation Results (confirmed)]
+All elements generated in this document must strictly adhere to the following naming conventions:
 
-## 2. Desired Business Outcomes
-> **🤖 AI AGENT INSTRUCTION:** Describe what success looks like at the organizational level once the business need is satisfied. This sets the stage for defining the Future State.
+| Prefix | Entity | Format | Example |
+| :--- | :--- | :--- | :--- |
+| **BD-** | Business Driver | `BD-xx` (where xx is a sequential number) | `BD-02`, `BD-03` |
+| **BR-** | Business Requirement | `BR-xx` (where xx is a sequential number) | `BR-01`, `BR-02` |
 
-*   **Target State Vision:** [INSERT: Vision Statement | A high-level description of the ideal business environment once the need is addressed (e.g., "Achieve fully automated, instantaneous registration for all qualified digital customers") | Enterprise Strategy / Sponsor Directives]
-*   **Value Proposition:** [INSERT: Benefit Narrative | The overarching benefit to the enterprise and its key stakeholders (Customer, Sponsor, Employees) if this need is successfully addressed | Elicitation Results (confirmed) - Business Value Discussions]
+---
 
-## 3. Business Constraints
-> **🤖 AI AGENT INSTRUCTION:** Identify any high-level limitations or boundaries imposed by the enterprise or external factors that restrict how this business need can be resolved. Do not include technical design constraints; list only strategic and business-level constraints.
+## 1. Business Drivers Register
 
-*   **Time/Budget Restrictions:** [INSERT: Financial/Timeline Constraints | Strict deadlines, budgetary limits, or fiscal year ceilings established by the Sponsor | Elicitation Results (confirmed) - Sponsor Constraints]
-*   **Compliance Mandates:** [INSERT: Policy/Regulatory Constraints | Mandatory legal, compliance, or strict corporate policy boundaries that must not be breached during this change | Business Policies / Legal Audit]
+> **🤖 AI AGENT INSTRUCTION:** Identify and list the primary business drivers (e.g., strategic, financial, competitive, compliance-driven, or innovative forces) that trigger the change. Do not propose solutions or systems here.
+
+| Business Driver ID | Category | Business Driver Statement | Source / Reference Document |
+| :--- | :--- | :--- | :--- |
+| **BD-01** | [Revenue / Strategy / Compliance / Innovation] | [INSERT: e.g., "Revenue - Preliminary estimates that the proposed 'New Business' could deliver EBITDA of up to c. $21m in 2028"] | [INSERT: e.g., High Level Requirement Document / Business Case] |
+| **BD-02** | [Revenue / Strategy / Compliance / Innovation] | [INSERT: e.g., "Strategy - New Business capabilities support and add value to BAU and new growth initiatives including Home Energy Management"] | [INSERT: e.g., Enterprise Strategy / Stakeholder Interviews] |
+| **[BD-xx]** | [INSERT] | [INSERT] | [INSERT] |
+
+---
+
+## 2. Business Requirements Traceability Matrix
+
+> **🤖 AI AGENT INSTRUCTION:** List the high-level business requirements representing strategic problems, opportunities, or constraints. Every business requirement MUST be mapped to one or more Business Drivers using its ID. Priority here represents strategic alignment and high-level importance, not implementation sprint priority.
+
+| Business Req ID | Requirement Statement | Related BD-ID | Strategic Priority | Source / Driver |
+| :--- | :--- | :--- | :--- | :--- |
+| **BR-01** | [INSERT: e.g., "To establish an energy services offering of scheduled install of energy efficient appliances, servicing, and repairs that continually improve value proposition to the customer."] | `BD-02` | [High / Medium / Low] | [INSERT: e.g., CVP Document] |
+| **BR-02** | [INSERT: e.g., "To increase earnings from sales and installation of energy efficient appliances from -$10.2M loss in the first year to $21m in 2028."] | `BD-01` | [High / Medium / Low] | [INSERT: e.g., Business Case] |
+| **[BR-xx]** | [INSERT] | `BD-xx` | [INSERT] | [INSERT] |
+
+---
+
+## 3. Next Step Verification (Sequential Bridge Tollgate)
+
+> **🤖 AI AGENT INSTRUCTION (TOLLGATE EXECUTION):** 
+> Display this block exactly to prompt the user for the next steps. These requirements are considered **RAW** until they are validated and scope boundaries are established.
+
+*   **Self-Check Prompt:** "I have successfully drafted the **Business Requirements Traceability Matrix**. Before we proceed, we should verify the scope of the solution. Please select your preferred next step:
+    1. **Define Solution Scope (Task 6.4):** Load `solution-scope.md` to map these requirements into positive and negative boundaries.
+    2. **Quantify Business Objectives (Task 6.2):** Load `business-objectives.md` to define SMART targets corresponding to these requirements."

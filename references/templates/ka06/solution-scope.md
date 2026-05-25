@@ -35,29 +35,74 @@ Before generating content, verify the availability of the following input data e
 
 ---
 
+## 📋 ID CONVENTION REFERENCE
+
+All elements generated in this document must strictly adhere to the following naming conventions:
+
+| Prefix | Entity | Format | Example |
+| :--- | :--- | :--- | :--- |
+| **SCP-IN-** | Scope Item (In-Scope) | `SCP-IN-xx` (where xx is a sequential number) | `SCP-IN-01`, `SCP-IN-02` |
+| **SCP-OUT-** | Scope Item (Out-of-Scope) | `SCP-OUT-xx` (where xx is a sequential number) | `SCP-OUT-01`, `SCP-OUT-02` |
+| **INT-** | Interface / Integration | `INT-xx` (where xx is a sequential number) | `INT-01`, `INT-02` |
+
+---
+
 ## 1. Solution Vision
 > **🤖 AI AGENT INSTRUCTION:** Provide a high-level summary of the solution's purpose, scope, and how it directly enables the desired Future State.
 
 *   **Solution Purpose:** [INSERT: Vision Statement | 2-3 sentence overview of the ultimate functional output of the solution (e.g., "The solution is a unified, automated digital onboarding portal that validates customer identity in real time...") | Change Strategy (Section 4)]
 *   **Business Alignment:** [INSERT: Alignment Narrative | Description of how this solution scope directly satisfies the Business Requirements and satisfies the SMART Business Objectives | Business Objectives (Section 2)]
 
-## 2. In-Scope Capabilities and Components
-> **🤖 AI AGENT INSTRUCTION:** Define the positive boundaries of the solution by documenting the specific business processes, data, organizational units, and technology domains that will be created, modified, or impacted.
+---
 
-*   **Business Processes:** [INSERT: Processes List | The specific operational processes to be automated, optimized, or established (e.g., Online registration verification, automated document parsing) | Future State Description (Section 2)]
-*   **Data & Information:** [INSERT: Data Domains List | Core data entities or information assets managed, stored, or processed by the solution (e.g., Customer Profile Master Data, ID Image Metadata) | Elicitation Results (confirmed)]
-*   **Technology & Infrastructure:** [INSERT: Technical Domains List | High-level architectural components, hardware platforms, or software modules required (e.g., OCR extraction module, database server instance) | Future State Description (Section 4)]
-*   **Organizational Units:** [INSERT: Impacted Org Units | Departments, divisions, or external customer segments whose work or interactions are directly altered by the solution (e.g., Digital Risk Operations Team) | Future State Description (Section 3)]
+## 2. In-Scope Capabilities and Components
+> **🤖 AI AGENT INSTRUCTION:** Define the positive boundaries of the solution by documenting the specific business processes, data, organizational units, and technology domains that will be created, modified, or impacted. Ensure every item has a unique ID with the prefix `SCP-IN-`.
+
+| Scope ID | Category | Scope Description | Impacted Stakeholder / Org Unit |
+| :--- | :--- | :--- | :--- |
+| **SCP-IN-01** | [Process / Data / System / OrgUnit] | [INSERT: e.g., "Manage Digital Onboarding Channel - Online registration verification and automated document parsing"] | [INSERT: e.g., Digital Risk Operations Team] |
+| **SCP-IN-02** | [Process / Data / System / OrgUnit] | [INSERT: e.g., "Manage Stock Availability and Inventory levels"] | [INSERT: e.g., Warehouse Operations] |
+| **[SCP-IN-xx]** | [INSERT] | [INSERT] | [INSERT] |
+
+---
 
 ## 3. Out-of-Scope Components (Boundary Exclusions)
-> **🤖 AI AGENT INSTRUCTION:** Explicitly state what is NOT included in this solution scope. Documenting these exclusions is critical to manage stakeholder expectations and prevent scope creep.
+> **🤖 AI AGENT INSTRUCTION:** Explicitly state what is NOT included in this solution scope. Documenting these exclusions is critical to manage stakeholder expectations and prevent scope creep. Ensure every item has a unique ID with the prefix `SCP-OUT-`.
 
-*   **Excluded Processes:** [INSERT: Excluded Processes List | Adjacent business processes that will remain entirely manual or untouched in this phase (e.g., Corporate customer registration) | Future State Description (Section 1)]
-*   **Excluded Systems:** [INSERT: Excluded Systems List | Legacy platforms or applications that will not be modified or replaced (e.g., Core legacy retail billing system) | Future State Description (Section 1)]
-*   **Excluded Stakeholders/Units:** [INSERT: Excluded Groups List | Particular user groups or external divisions explicitly carved out from utilizing this solution | Future State Description (Section 1)]
+| Scope ID | Category | Scope Description (Boundary Exclusion) | Reason for Exclusion |
+| :--- | :--- | :--- | :--- |
+| **SCP-OUT-01** | [Process / Data / System / OrgUnit] | [INSERT: e.g., "Single view of customer - Customer profitability reporting"] | [INSERT: e.g., Out of scope for Phase 1 - Deferred to Phase 2 strategic roadmap] |
+| **SCP-OUT-02** | [Process / Data / System / OrgUnit] | [INSERT: e.g., "Enterprise wide opt-out solution"] | [INSERT: e.g., Handled by corporate centralized governance team outside this project] |
+| **[SCP-OUT-xx]** | [INSERT] | [INSERT] | [INSERT] |
+
+---
 
 ## 4. Key Integrations and Interfaces
 > **🤖 AI AGENT INSTRUCTION:** Identify the major touchpoints where this solution scope must interface with existing internal legacy applications or external third-party platforms.
 
-*   **Internal Interfaces:** [INSERT: Internal Interfaces List | Connections with existing enterprise software applications, databases, or local services (e.g., Legacy ledger accounting system via batch upload) | Elicitation Results (confirmed)]
-*   **External Interfaces:** [INSERT: External Interfaces List | Touchpoints with external users, suppliers, regulatory databases, or vendor APIs (e.g., Government national database verification API, email/SMS gateway) | Elicitation Results (confirmed)]
+| Interface ID | Interface Name | Type | Description |
+| :--- | :--- | :--- | :--- |
+| **INT-01** | [e.g., SAP Interface] | [Internal / External] | [INSERT: e.g., Legacy ledger accounting system via batch upload] |
+| **INT-02** | [e.g., National ID API] | [Internal / External] | [INSERT: e.g., Government national database verification API for real-time validation] |
+| **[INT-xx]** | [INSERT] | [INSERT] | [INSERT] |
+
+---
+
+## ✍️ GOVERNANCE & APPROVAL
+
+> **🤖 AI AGENT INSTRUCTION:** This block represents the formal sign-off for the entire Solution Scope. Since C-level sponsors sign off on the overall boundary rather than individual line items, the agreement is captured at the document level.
+
+| Approval Status | Date Agreed | Sign-off By (Sponsor/Authority) | Notes / Conditions |
+| :--- | :--- | :--- | :--- |
+| **[DRAFT / APPROVED / REJECTED]** | [INSERT: dd/mm/yyyy] | [INSERT: Surname, First name - Title/Role] | [INSERT: Any high-level conditions or remarks] |
+
+---
+
+## 5. Next Step Verification (Sequential Bridge Tollgate)
+
+> **🤖 AI AGENT INSTRUCTION (TOLLGATE EXECUTION):** 
+> Display this block exactly to prompt the user for the next steps. The solution scope is considered **RAW** until it is approved and transitioned to the requirement modeling phase.
+
+*   **Self-Check Prompt:** "I have successfully drafted the **Solution Scope** with standard IIBA tables and a document-level Governance Block. Please select your preferred next step:
+    1. **Deconstruct to Business Rules (Task 5.4):** Open `references/templates/shared/business-rules-catalog.md` to define and isolate the operational rules that govern this scope.
+    2. **Model Requirements (Task 7.1):** Proceed to `specified-modelled-requirements.md` to write detailed, atomic functional requirements for the in-scope capabilities."

@@ -52,10 +52,10 @@ Before generating content, verify the availability of the following input data e
 *   **Technical Constraints:** [INSERT: Technical Limitations Narrative | Documented technical debt, end-of-life hardware/software, scalability issues, security vulnerabilities, or performance lags | Elicitation Results (confirmed) - IT Infrastructure Audit]
 
 ## 4. Internal Assets & Policies
-> **🤖 AI AGENT INSTRUCTION:** Detail the tangible/intangible resources currently available and the business policies/rules governing current behaviors.
+> **🤖 AI AGENT INSTRUCTION:** Detail the tangible/intangible resources currently available and the high-level business policies governing current behaviors. **⚠️ DECOUPLING RULE:** Do not list individual operational business rules here. Centralize all operational business rules in `shared/business-rules-catalog.md`. Document only high-level corporate policies, assets, and standard operating procedures here.
 
 *   **Key Assets:** [INSERT: Asset Inventory | Active resources including financial capital, physical facilities, proprietary algorithms, brand equity, or specialized staff expertise | Elicitation Results (confirmed) - Resource Assessment]
-*   **Business Policies:** [INSERT: Policy Registry | Current organizational directives, standard operating procedures, compliance guidelines, or operational rules that constrain work | Elicitation Results (confirmed) - Business Policy Manual]
+*   **Business Policies:** [INSERT: Policy Registry | Current high-level organizational directives, standard operating procedures, or compliance guidelines that constrain work. Specific operational rules must be decoupled and moved to the Business Rules Catalog (shared/business-rules-catalog.md) | Elicitation Results (confirmed) - Business Policy Manual]
 
 ## 5. External Influencers
 > **🤖 AI AGENT INSTRUCTION:** Analyze forces outside the organizational boundaries that shape current operations or impose constraints.
