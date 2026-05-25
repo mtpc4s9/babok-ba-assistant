@@ -53,4 +53,4 @@ Before finalizing these criteria, ensure they pass the following checks:
 - [ ] **Testable:** A QA engineer can immediately write a test case from these criteria.
 
 ---
-*Standardized by BA Zone · Digital School*
+*Standardized according to IIBA® BABOK® Guide v3 terminology for Enterprise AI environments.*

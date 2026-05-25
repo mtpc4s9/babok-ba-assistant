@@ -65,7 +65,7 @@ A User Story is not a rigid legal contract or a detailed specification document;
 *   ❌ **Violation:**
     *   "As a registered student, I want the system to authenticate me using a 256-bit AES-encrypted JWT token stored in `localStorage` with a 15-minute refresh rotation, so that I don't have to re-login."
 *   ✅ **Standardized:**
-    *   "As a registered student, I want to log in securely to BA Zone, so that I can access my courses without repeated authentication."
+    *   "As a registered student, I want to log in securely to PlatformX, so that I can access my courses without repeated authentication."
     *   *(Note: The technical security implementation is negotiated during refinement and documented in the technical design.)*
 
 ---

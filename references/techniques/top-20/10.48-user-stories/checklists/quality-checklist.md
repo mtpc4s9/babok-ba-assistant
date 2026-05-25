@@ -111,4 +111,4 @@ Before finalization, perform this 5-question sanity check:
 *   ❌ AC contains vague terms like "etc." or "and so on" (non-testable).
 
 ---
-*Standardized by BA Zone · Digital School*
+*Standardized according to IIBA® BABOK® Guide v3 terminology for Enterprise AI environments.*
