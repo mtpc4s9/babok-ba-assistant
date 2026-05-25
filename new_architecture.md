@@ -97,8 +97,8 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │       ├── 10.41-scope-modelling.md                     # Mô hình hóa phạm vi (Context Diagram).
     │       ├── 10.43-stakeholder-list-map-or-personas.md    # Phân tích và lập bản đồ Stakeholders.
     │       ├── 10.44-state-modelling.md                     # Mô hình hóa trạng thái (State Diagram).
-    │       ├── 10.47-use-cases-and-scenarios.md             # Đặc tả Use Cases và kịch bản nghiệp vụ.
-    │       └── 10.48-user-stories.md                        # Viết và quản lý User Stories chuẩn Agile.
+    │       ├── 10.47-use-cases-and-scenarios/               # Thư mục đặc tả Use Cases và kịch bản nghiệp vụ.
+    │       └── 10.48-user-stories/                          # Thư mục viết và quản lý User Stories chuẩn Agile.
     │
     ├── templates/                    # Khung sườn tài liệu Markdown phân mảnh (Modular Markdown Templates).
     │   │                             # ⚠️ NGUYÊN TẮC: Chỉ chứa placeholders `[insert]`, không chứa thông tin giả định.
