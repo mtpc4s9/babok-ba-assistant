@@ -36,7 +36,13 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   ├── techniques.md         # Các kỹ thuật khơi gợi phù hợp (Interviews, Workshop, Collaborative Games...).
     │   │   └── gotchas.md            # Các bẫy thường gặp trong khơi gợi (như thiên kiến xác nhận, ảo giác yêu cầu).
     │   │
-    │   ├── ka05-rlcm/                # ⚠️ [Future Scope] Requirements Life Cycle Management (Chưa triển khai vật lý).
+    │   ├── ka05-rlcm/                # Requirements Life Cycle Management — 5 tasks (5.1–5.5)
+    │   │   ├── README.md             # Tổng quan KA5, điều hướng, trạng thái vòng đời yêu cầu (Status Lifecycle Map).
+    │   │   ├── tasks.md              # Chi tiết Tasks: Trace, Maintain, Prioritize, Assess Changes, Approve.
+    │   │   ├── guidelines-tools.md   # Hướng dẫn & Công cụ chuẩn bị trước khi cập nhật hay đánh giá thay đổi.
+    │   │   ├── stakeholders.md       # Phân bổ vai trò (RACI) & Quyền hạn phê duyệt thay đổi (Change Authority).
+    │   │   ├── techniques.md         # Phân bổ các kỹ thuật tối ưu (Backlog, Decision Analysis, Item Tracking...).
+    │   │   └── gotchas.md            # Các bẫy thực tế: Bị động trước scope creep, bỏ qua phân tích tác động (impact).
     │   │
     │   ├── ka06-strategy/            # Strategy Analysis — 4 tasks (6.1–6.4)
     │   │   ├── README.md             # Tổng quan KA6, danh sách 4 tasks, phân tích chiến lược doanh nghiệp.
@@ -71,7 +77,10 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   ├── quick-reference.md        # Bảng tra cứu gọn gàng 50 kỹ thuật: ID | Name | When to Use | KA.
     │   ├── by-situation.md           # Hướng dẫn chọn kỹ thuật phù hợp theo tình huống thực tế của doanh nghiệp.
     │   └── top-20/                   # Tài liệu hướng dẫn thực thi chuyên sâu cho 20 kỹ thuật cốt lõi và phổ biến nhất.
-    │       ├── 10.01-acceptance-and-evaluation-criteria.md  # Tiêu chí nghiệm thu và đánh giá.
+	│		├── 10.35-process-modelling                      # Folder chứa các kỹ thuật chuyên sâu thuộc Process Modelling.
+	│		├── 10.47-use-cases-and-scenarios                # Folder chứa các kỹ thuật chuyên sâu thuộc Use Cases Writing Skill.
+	│		├── 10.48-user-stories                           # Folder chứa các kỹ thuật chuyên sâu thuộc Use Stories Writing Skill.
+	│		├── 10.01-acceptance-and-evaluation-criteria.md  # Tiêu chí nghiệm thu và đánh giá.
     │       ├── 10.07-business-cases.md                      # Lập Business Cases tài chính.
     │       ├── 10.08-business-model-canvas.md               # Mô hình kinh doanh Canvas.
     │       ├── 10.09-business-rules-analysis.md             # Phân tích Luật kinh doanh.
@@ -108,6 +117,15 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   ├── elicitation-activity-plan.md                # Kế hoạch chuẩn bị khơi gợi yêu cầu (Task 4.1)
     │   │   ├── elicitation-results-tracker.md              # [Gộp 4.2 & 4.3] Kết quả khơi gợi và Xác nhận thông tin khơi gợi.
     │   │   └── stakeholder-engagement-tracking.md          # Theo dõi mức độ tương tác cộng tác của Stakeholder (Task 4.5)
+    │   │
+    │   ├── ka05/                     # Templates quản lý vòng đời yêu cầu (KA5 - Hệ thống Ma trận liên kết)
+    │   │   ├── business-requirement-matrix.md          # Quản lý mục tiêu nghiệp vụ chi tiết & Driver Traceability.
+    │   │   ├── functional-requirement-matrix.md        # Quản lý đặc tả chức năng & MoSCoW prioritization.
+    │   │   ├── non-functional-requirement-matrix.md    # Quản lý các ràng buộc phi chức năng định lượng.
+    │   │   ├── requirement-traceability-matrix.md      # Master RTM liên kết chéo đầu-cuối từ Business Goals đến Test Case.
+    │   │   ├── requirements-change-assessment.md      # Đánh giá tác động thay đổi (Benefit, Cost, Schedule, Risk).
+    │   │   ├── requirements-approval-package.md        # Memo trình duyệt và ký nhận phê duyệt yêu cầu từ Sponsor.
+    │   │   └── executive-pitch-deck.md                 # Slide Pitch trình bày cấp cao (C-Level/BoD) tích hợp @frontend-slides.
     │   │
     │   ├── ka06/                     # Templates phân tích chiến lược (KA6)
     │   │   ├── business-case-executive.md                  # Mẫu Business Case hoàn chỉnh cho Ban Giám đốc duyệt.
