@@ -60,7 +60,13 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   ├── techniques.md         # Kỹ thuật chuyên sâu: Use Cases, User Stories, Process/Data Modeling.
     │   │   └── gotchas.md            # Lỗi: Yêu cầu không thể kiểm thử (non-verifiable), bỏ qua bước tự audit chất lượng.
     │   │
-    │   └── ka08-evaluation/          # ⚠️ [Future Scope] Solution Evaluation (Chưa triển khai vật lý).
+    │   └── ka08-evaluation/          # Solution Evaluation — 5 tasks (8.1–8.5)
+    │       ├── README.md             # Tổng quan KA8, đo lường và đánh giá giá trị thực tế của giải pháp mang lại.
+    │       ├── tasks.md              # Chi tiết các Task: Measure, Analyze, Assess Limitations, Recommend Actions.
+    │       ├── guidelines-tools.md   # Hướng dẫn & Công cụ chuẩn bị trước khi đánh giá hiệu suất giải pháp.
+    │       ├── stakeholders.md       # Vai trò của stakeholders (Sponsor, End User) & Approval Authority.
+    │       ├── techniques.md         # Phân bổ các kỹ thuật tối ưu (Financial Analysis, Root Cause Analysis...).
+    │       └── gotchas.md            # Các bẫy thực tế: Bẫy Sunk Cost, nhầm lẫn giữa Data Collection và Analysis.
     │
     ├── canonical/                          # Dữ liệu nguồn BABOK V3 dạng thô. KHÔNG load mặc định để tiết kiệm Token.
     │   ├── 01-input-output-summary.md      # Ma trận I/O gốc của toàn bộ các task trong BABOK V3.
@@ -146,7 +152,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── specified-modelled-requirements.md          # Đặc tả yêu cầu kỹ thuật thô sau mô hình hóa (Task 7.1)
     │   │
     │   └── shared/                   # Các mẫu chia sẻ dùng chung giữa các KA (Cross-cutting Templates)
-    │       └── business-rules-catalog.md                   # Từ điển/Mục lục luật kinh doanh tập trung (decoupled) (Technique 10.9)
+    │       └── business-rules-catalog.md                   # Từ điển/Mục lục luật kinh doanh tập trung (decoupled) (Technique 10.9). Được load bởi Agent khi cần quản lý luật kinh doanh độc lập cho các đặc tả yêu cầu trong specified-modelled-requirements.md.
     │
     ├── advisor/                      # Phân hệ cố vấn và điều phối thông minh của AI Agent.
     │   ├── readiness-check.md        # 🚨 MANDATORY Tollgate Checklist. Agent tự chạy trước khi sinh bất kỳ tài liệu nào.

@@ -47,8 +47,8 @@ description: >-
 | 7.5 Define Design Options | Design Options | 7.6 | 6.4 |
 | 7.6 Analyze Value & Recommend | Solution Recommendation | *None* | 6.4 |
 | **KA08: Solution Evaluation** | | | |
-| 8.1 Measure Solution Perf. | Solution Performance Measures | 8.2 | *None* |
-| 8.2 Analyze Performance Measures | Solution Performance Analysis | 8.3, 8.4 | *None* |
+| 8.1 Measure Solution Perf. | Solution Performance Measures | 8.2 | 8.3, 8.4 |
+| 8.2 Analyze Performance Measures | Solution Performance Analysis | 8.3, 8.4 | 8.5 |
 | 8.3 Assess Solution Limitations | Solution Limitation | 8.5 | *None* |
 | 8.4 Assess Enterprise Limitations | Enterprise Limitation | 8.5 | *None* |
-| 8.5 Recommend Actions | Recommended Actions | *None* | 4.5 |
+| 8.5 Recommend Actions | Recommended Actions | *None* | 3.1, 4.5 |

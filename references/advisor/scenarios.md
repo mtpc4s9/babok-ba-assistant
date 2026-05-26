@@ -36,7 +36,7 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 
 *   **Symptom:** "The sponsor is continuously demanding new features. The budget is nearly exhausted, yet they label every new request as 'High Priority'."
 *   **Diagnosis:** Requirements life cycle management is poorly governed, lacking a solid baseline to negotiate, evaluate, and prioritize incoming changes.
-*   **KA & Task:** KA05 - Task 5.3: Prioritize Requirements & Task 5.4: Assess Requirements Changes *(Future Scope)*
+*   **KA & Task:** [KA05 - Task 5.3: Prioritize Requirements & Task 5.4: Assess Requirements Changes](../ka/ka05-rlcm/tasks.md)
 *   **Recommended Techniques:** 
     *   [Backlog Management](../techniques/quick-reference.md) (Primary — to strictly sequence incoming work items)
     *   [Financial Analysis](../techniques/top-20/10.20-financial-analysis.md) (Primary — to evaluate the ROI and demonstrate the opportunity cost of the new features)
@@ -63,7 +63,7 @@ description: Real-world diagnostic mapping. Converts user symptoms ("I am facing
 
 *   **Symptom:** "The solution was successfully deployed with zero defects and meets all functional requirements, but the end users refuse to adopt it and continue using legacy Excel spreadsheets."
 *   **Diagnosis:** The IT solution is technically sound, but the enterprise environment (culture, policies, or operational readiness) is restricting value realization.
-*   **KA & Task:** KA08 - Task 8.4: Assess Enterprise Limitations *(Future Scope)*
+*   **KA & Task:** [KA08 - Task 8.4: Assess Enterprise Limitations](../ka/ka08-evaluation/tasks.md)
 *   **Recommended Techniques:** 
     *   [Observation](../techniques/quick-reference.md) (Primary — to witness firsthand how the end users perform their daily work)
     *   [Organizational Modelling](../techniques/quick-reference.md) (Secondary — to assess if the current organizational structure or roles impede solution adoption)

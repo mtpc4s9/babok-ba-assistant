@@ -1,10 +1,10 @@
 ---
 name: babok-ba-assistant
 description: >-
-  Use when performing, planning, or executing Business Analysis activities following BABOK V3 standards including planning, elicitation, strategy analysis, and deliverable creation.
+  Use when performing, planning, or executing Business Analysis activities following BABOK V3 standards including planning (KA3), elicitation (KA4), requirements life cycle & traceability (KA5), strategy analysis (KA6), requirements analysis & design definition (KA7), and solution evaluation & performance measurement (KA8) to avoid scope creep or gaps.
 metadata:
   category: framework
-  triggers: babok, business analysis, strategy analysis, elicitation, brd, srs, use case, business case, readiness check
+  triggers: babok, business analysis, strategy analysis, elicitation, traceability, scope creep, change assessment, performance measurement, solution evaluation, brd, srs, use case, business case, readiness check
 ---
 
 # BABOK V3 Business Analysis Assistant
@@ -14,7 +14,7 @@ This skill implements the strict **IIBA® BABOK® Guide v3** standards for Busin
 ## 1. When to Use (Triggers)
 
 Use this skill whenever the user requires assistance with:
-*   Planning and executing Business Analysis activities across major Knowledge Areas: Business Analysis Planning and Monitoring (KA3), Elicitation and Collaboration (KA4), Strategy Analysis (KA6), and Requirements Analysis and Design Definition (KA7).
+*   Planning and executing Business Analysis activities across major Knowledge Areas: Business Analysis Planning and Monitoring (KA3), Elicitation and Collaboration (KA4), Requirements Life Cycle Management (KA5), Strategy Analysis (KA6), Requirements Analysis and Design Definition (KA7), and Solution Evaluation (KA8).
 *   Generating formal BA deliverables such as Business Analysis Plans, Elicitation Activity Plans, Business Cases, Change Strategies, Business Requirements Documents (BRDs), Software Requirements Specifications (SRSs), Requirements Architecture Diagrams, Design Options, or Solution Recommendations.
 *   Selecting and diagnosing the appropriate BABOK technique for real-world project situations.
 *   Tracing task dependencies, inputs, outputs, guidelines, and stakeholder responsibilities.
@@ -31,8 +31,8 @@ Use this skill whenever the user requires assistance with:
 *   Determine the target Knowledge Area (KA) and Task ID. Navigate to `references/ka/[KA-folder]/` and load files in the following strict priority:
     1.  **`README.md`:** ALWAYS read first to establish context and scope.
     2.  **`tasks.md`:** Read to verify Purpose, Inputs, and Outputs of the specific task.
-    3.  **`guidelines-tools.md`:** MANDATORY to read alongside `tasks.md` to check governing constraints & tools (for KA06; KA03 and KA04 are consolidated in their respective `tasks.md`).
-    4.  **`stakeholders.md`:** MANDATORY to read alongside `tasks.md` to identify required participants (for KA06; KA03 and KA04 are consolidated in their respective `tasks.md`).
+    3.  **`guidelines-tools.md`:** MANDATORY to read alongside `tasks.md` to check governing constraints and tools.
+    4.  **`stakeholders.md`:** MANDATORY to read alongside `tasks.md` to identify required participants.
     5.  **`techniques.md`:** Read only when asked how to perform a task (HOW) or when advising on technique selection (WHICH).
     6.  **`gotchas.md`:** Read when encountering project risks, failure modes, or common traps.
 
@@ -54,9 +54,10 @@ Follow this decision tree based on the user's request to navigate to the correct
 ### A. Knowledge Areas Lookup (Tasks, Guidelines, Stakeholders, Traps)
 *   Planning & Monitoring (KA3) → `references/ka/ka03-planning/`
 *   Elicitation & Collaboration (KA4) → `references/ka/ka04-elicitation/`
-*   Requirements Analysis & Design Definition (KA7) → `references/ka/ka07-radd/`
+*   Requirements Life Cycle Management (KA5) → `references/ka/ka05-rlcm/`
 *   Strategy Analysis (KA6) → `references/ka/ka06-strategy/`
-*   Requirements Life Cycle (KA5) / Solution Evaluation (KA8) → *[Future Scope]*
+*   Requirements Analysis & Design Definition (KA7) → `references/ka/ka07-radd/`
+*   Solution Evaluation (KA8) → `references/ka/ka08-evaluation/`
 
 ### B. Diagnostics & Technique Selection (Techniques)
 *   "Which technique should I use for this situation?" (Situation Diagnosis) → `references/techniques/by-situation.md`
@@ -87,6 +88,7 @@ Follow this decision tree based on the user's request to navigate to the correct
 *   "Where does this document come from? (Inputs)" → `references/dependencies/input-catalog.md`
 *   "What is this document used for next? (Outputs)" → `references/dependencies/output-catalog.md`
 *   "What are the prerequisites for Task X?" → `references/dependencies/task-dependency-map.md`
+*   Shared decoupled business rules → `references/templates/shared/business-rules-catalog.md`
 
 ### D. Readiness and Advisory Support (Advisory)
 *   "What do I need to prepare before starting Task X?" → `references/advisor/readiness-check.md`
@@ -140,6 +142,7 @@ When the user requests exporting to Microsoft Office formats ("Export", "Generat
 > 2. **Declare to User:** Inform the user which technique is being used and explain why it is optimal for the current context.
 > 3. **Initiate Elicitation Interview (AI-to-User Elicitation Session):**
 >    *   **NEVER** hallucinate or generate empty templates.
->    *   Create a focused questionnaire (3-5 questions) to gather the raw inputs required for that technique.
+>    *   Load `references/advisor/elicitation-interview-playbook.md` to check if a standardized questionnaire exists. Match the technique to a Domain (A–E) and present the standardized questionnaire verbatim.
+>    *   If no playbook questionnaire exists, create a focused questionnaire (3-5 questions) to gather the raw inputs required for that technique.
 >    *   Instruct the user: *"To apply this technique, I need your input. Please provide the following details through this quick interview..."*
 >    *   Only draft the custom deliverable after receiving the user's responses.

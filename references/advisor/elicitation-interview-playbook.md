@@ -38,6 +38,7 @@ description: Playbook for executing AI-to-User Elicitation Interviews for non-to
 ### Domain B: Quantitative & Financial Analysis
 *   *Applicable Techniques:* 10.19 (Estimation), 10.20 (Financial Analysis).
 *   *Key Artifact Produced:* ROI Analysis / Cost-Benefit Report / Effort Estimation Log.
+*   *Note on 10.20:* For 10.20 (Financial Analysis), prefer loading the dedicated `references/techniques/top-20/10.20-financial-analysis.md` directly.
 
 #### Elicitation Questionnaire:
 1.  **Cost Categories:** What are the estimated initial development costs (CAPEX - e.g., developer hours, licenses) and recurring operational costs (OPEX - e.g., hosting, support)?

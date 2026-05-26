@@ -13,6 +13,7 @@ description: >-
 | Business Analysis Approach | 3.1 Plan Business Analysis Approach | KA03 |
 | Business Analysis Information | Multiple (Any BA task) | KA04 |
 | Business Analysis Performance Assessment | 3.5 Identify BA Performance Improvements | KA04 |
+| Business Rules Catalog | (Shared Asset) | KA07 |
 | Business Objectives | 6.2 Define Future State | KA06, KA08 |
 | Business Requirements | 6.1 Analyze Current State | KA06 |
 | Change Strategy | 6.4 Define Change Strategy | KA07 |
@@ -32,11 +33,12 @@ description: >-
 | Performance Objectives | (External) | KA03 |
 | Potential Value | 6.2 Define Future State | KA07, KA08 |
 | Proposed Change | (External) | KA05 |
+| Recommended Actions | 8.5 Recommend Actions | KA08 (End of Workflow) |
 | Requirements (any state) | 7.1 Specify and Model Requirements | KA05, KA07 |
 | Requirements (prioritized) | 5.3 Prioritize Requirements | KA06, KA07 |
 | Requirements (validated) | 7.3 Validate Requirements | KA07 |
 | Requirements (verified) | 7.2 Verify Requirements | KA05 |
-| Requirements Architecture | 7.4 Define Requirements Architecture | KA07 |
+| Requirements Architecture | 7.4 Define Requirements Architecture | KA05, KA07 |
 | Risk Analysis Results | 6.3 Assess Risks | KA06 |
 | Solution Limitation | 8.3 Assess Solution Limitations | KA08 |
 | Solution Performance Analysis | 8.2 Analyze Performance Measures | KA08 |

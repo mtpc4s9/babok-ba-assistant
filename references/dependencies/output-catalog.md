@@ -25,6 +25,7 @@ description: >-
 | Requirements / Designs (prioritized)| 5.3 Prioritize Requirements | 6.3, 7.5 |
 | Req. / Design Change Assessment | 5.4 Assess Requirements Changes | *Governance Process* |
 | Requirements / Designs (approved) | 5.5 Approve Requirements | *Solution Delivery* |
+| Executive Pitch Deck | 5.5 Approve Requirements (C-Level Variant) | *Executive Communication* |
 | Current State Description | 6.1 Analyze Current State | 6.4, 8.4 |
 | Business Requirements | 6.1 Analyze Current State | 6.2 |
 | Business Objectives | 6.2 Define Future State | 6.3, 7.3, 8.1 |
@@ -44,3 +45,4 @@ description: >-
 | Solution Limitation | 8.3 Assess Solution Limitations | 8.5 |
 | Enterprise Limitation | 8.4 Assess Enterprise Limitations| 8.5 |
 | Recommended Actions | 8.5 Recommend Actions | *End of workflow* |
+| Executive Recommendation Pitch | 8.5 Recommend Actions (C-Level Variant) | *Executive Communication* |

@@ -1,16 +1,19 @@
-#### description: Stakeholder verification register for KA05 Requirements Life Cycle Management (Tasks 5.1-5.5) defining Must Have, Should Have, and Approval Authority roles.
+---
+description: Stakeholder verification register for KA05 Requirements Life Cycle Management (Tasks 5.1-5.5) defining Must Have, Should Have, and Approval Authority roles.
+---
 
-### KA05: Requirements Life Cycle Management - Stakeholders
+# KA05: Requirements Life Cycle Management - Stakeholders
 
-**🤖 AI AGENT INSTRUCTION (STAKEHOLDER VERIFICATION):** You MUST verify stakeholder participation before generating any KA05 Matrix or Assessment artifacts. 
-*   If a **Must Have** is missing: BLOCK execution and request the user to identify them or assign a Stakeholder Proxy.
-*   If a **Should Have** is missing: Proceed but WARN the user of a potential quality/compliance drop.
-*   If the **Approval Authority** is missing in Task 5.4 or 5.5: Do NOT finalize the deliverable. Demand explicit sign-off routing based on the `governance-approach.md`.
+> **🤖 AI AGENT INSTRUCTION (STAKEHOLDER VERIFICATION):** You MUST verify stakeholder participation before generating any KA05 Matrix or Assessment artifacts. 
+> *   If a **Must Have** is missing: BLOCK execution and request the user to identify them or assign a Stakeholder Proxy.
+> *   If a **Should Have** is missing: Proceed but WARN the user of a potential quality/compliance drop.
+> *   If the **Approval Authority** is missing in Task 5.4 or 5.5: Do NOT finalize the deliverable. Demand explicit sign-off routing based on the `governance-approach.md`.
 
 ---
 
-#### Tasks 5.1, 5.2, and 5.3: Unified Matrix Generation (Trace, Maintain, Prioritize)
-*Because these tasks are executed concurrently to build the RTM, BRM, FRM, and NFRM, their stakeholder groups are consolidated.*
+## Tasks 5.1, 5.2, and 5.3: Unified Matrix Generation (Trace, Maintain, Prioritize)
+> **🤖 AI AGENT INSTRUCTION:** Because these tasks are executed concurrently to build the RTM, BRM, FRM, and NFRM, their stakeholder groups are consolidated.
+
 *   **Must Have:**
     *   **Sponsor:** Required to verify that prioritized requirements will deliver value from an organizational perspective.
     *   **Domain Subject Matter Expert (SME):** Required to provide recommendations regarding which requirements link to which solution components, and to ensure maintained requirements accurately reflect stated needs.
@@ -23,7 +26,7 @@
 
 ---
 
-#### Task 5.4: Assess Requirements Changes
+## Task 5.4: Assess Requirements Changes
 *   **Must Have:**
     *   **Sponsor:** Accountable for the solution scope; provides executive insight to be utilized when assessing whether the change justifies the cost.
     *   **Domain Subject Matter Expert (SME):** Required to provide insight into how the change will impact business operations and overall value.
@@ -36,7 +39,7 @@
 
 ---
 
-#### Task 5.5: Approve Requirements
+## Task 5.5: Approve Requirements
 *   **Must Have:**
     *   **Sponsor:** Responsible to review and approve the business case, solution or product scope, and all requirements and designs.
     *   **Domain SME / End User:** Involved in the review and validation of requirements before formal sign-off.

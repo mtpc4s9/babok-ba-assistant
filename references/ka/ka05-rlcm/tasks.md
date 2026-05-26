@@ -1,14 +1,16 @@
-#### description: Task definitions for KA05 Requirements Life Cycle Management (Tasks 5.1-5.5) including Purpose, Inputs, Outputs, and template mapping for unified Matrix generation.
+---
+description: Task definitions for KA05 Requirements Life Cycle Management (Tasks 5.1-5.5) including Purpose, Inputs, Outputs, and template mapping for unified Matrix generation.
+---
 
-### KA05: Requirements Life Cycle Management — Tasks Reference
+# KA05: Requirements Life Cycle Management — Tasks Reference
 
-**🤖 AI AGENT INSTRUCTION (WORKFLOW EXECUTION):** 
-You MUST execute `references/advisor/readiness-check.md` before generating any Output. 
-**CRITICAL MERGE RULE:** Tasks 5.1, 5.2, and 5.3 are executed concurrently. You MUST NOT generate separate documents for them. Their outputs are unified into Matrix templates depending on the level of abstraction (Business, Functional, Non-Functional, or Master RTM).
+> **🤖 AI AGENT INSTRUCTION (WORKFLOW EXECUTION):** 
+> You MUST execute `references/advisor/readiness-check.md` before generating any Output. 
+> **CRITICAL MERGE RULE:** Tasks 5.1, 5.2, and 5.3 are executed concurrently. You MUST NOT generate separate documents for them. Their outputs are unified into Matrix templates depending on the level of abstraction (Business, Functional, Non-Functional, or Master RTM).
 
 ---
 
-#### Tasks 5.1, 5.2, and 5.3 (Unified Execution: Trace, Maintain, Prioritize)
+## Tasks 5.1, 5.2, and 5.3 (Unified Execution: Trace, Maintain, Prioritize)
 *   **5.1 Trace Requirements Purpose:** To ensure requirements and designs are aligned to one another, and to manage the effects of change (Backward/Forward Traceability).
 *   **5.2 Maintain Requirements Purpose:** To retain requirement accuracy and consistency, and to support reuse in other solutions.
 *   **5.3 Prioritize Requirements Purpose:** To rank requirements in the order of relative importance (Value, Risk, Cost).
@@ -24,7 +26,7 @@ You MUST execute `references/advisor/readiness-check.md` before generating any O
 
 ---
 
-#### Task 5.4: Assess Requirements Changes
+## Task 5.4: Assess Requirements Changes
 *   **Purpose:** To evaluate the implications of proposed changes to requirements and designs (Impact Analysis).
 *   **Inputs:** Proposed Change, Requirements (prioritized/traced), Designs.
 *   **Governance Hook:** ⚠️ **MANDATORY:** You MUST load and reference `references/templates/ka03/governance-approach.md` to map the change process and authority levels correctly.
@@ -36,7 +38,7 @@ You MUST execute `references/advisor/readiness-check.md` before generating any O
 
 ---
 
-#### Task 5.5: Approve Requirements
+## Task 5.5: Approve Requirements
 *   **Purpose:** To obtain agreement on and approval of requirements and designs for business analysis work to continue and/or solution construction to proceed.
 *   **Inputs:** Requirements (verified), Designs.
 *   **Outputs & Trigger Rules (C-Level split):**

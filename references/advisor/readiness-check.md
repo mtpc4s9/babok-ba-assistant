@@ -41,3 +41,17 @@ description: >-
 
 > **⚠️ MANDATORY FAILURE RULE:**
 > If Tollgate Points **#1, #2, or #3** fail, you MUST halt document generation immediately. Reply to the user explicitly stating the missing component using the fields `📋 Missing Prerequisites` or `👥 Required Stakeholders` in your response. Await user confirmation before proceeding. Point #4 is self-healing and must never block the user.
+
+---
+
+## 💡 Tollgate Examples for KA05 & KA08
+
+### Example 1: Executing Task 5.4 (Assess Requirements Changes)
+*   **#1 Guidelines:** Requires **Governance Approach** (Output 3.3) and **Change Strategy** (Output 6.4). If the change process is not defined, you cannot evaluate change authority!
+*   **#2 Tools & Inputs:** Requires **Proposed Change** (External input) and **Requirements Architecture** (Output 7.4). If the RTM or requirements architecture is not loaded, you cannot trace the ripple effect of the change.
+*   **#3 Stakeholders:** Requires the **Change Control Board (CCB) / Sponsor** to make the final decision, and the **Project Manager** to assess budget/schedule.
+
+### Example 2: Executing Task 8.4 (Assess Enterprise Limitations)
+*   **#1 Guidelines:** Requires **Change Strategy** (Output 6.4) and **Future State Description** (Output 6.2) to understand what the organizational state was supposed to look like.
+*   **#2 Tools & Inputs:** Requires **Current State Description** (Output 6.1) and **Solution Performance Analysis** (Output 8.2). If you do not know how the solution is actually performing, you cannot assess why the enterprise is limiting its value!
+*   **#3 Stakeholders:** Requires **Domain SMEs** and **End Users/Customers** (the primary source of cultural/operational pain points). If they are missing, launch the **Elicitation Interview Playbook** (Domain A & C) verbatim.
