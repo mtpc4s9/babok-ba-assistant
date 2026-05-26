@@ -10,3 +10,10 @@
 
 # Allow .gitignore itself
 !.gitignore
+
+# Ignore node_modules in scripts/
+references/**/node_modules/
+
+# Ignore Python cache in references/
+references/**/*.pyc
+references/**/__pycache__/

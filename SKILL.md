@@ -113,19 +113,19 @@ When advising or preparing to generate documents, you **MUST** format your conve
 
 ---
 
-## 5. Office Export Rules (Dual-Engine Strategy)
+## 5. Office Export Rules (Triple-Engine Strategy)
 
 > **🤖 AI AGENT INSTRUCTION — ENGINE SELECTION:**
-> The BABOK BA Assistant uses **two export engines**. Read `references/scripts/docx-module/README.md` for the complete decision guide. Apply the routing rule below:
+> The BABOK BA Assistant uses **three complementary export engines**. Read `references/scripts/docx-module/README.md` and `references/scripts/xlsx-module/README.md` for complete decision guides. Apply the routing rule below:
 
 ### Engine Selection Rule
 
 ```
 When user requests EXPORT:
 
-  FORMAT = .xlsx or .pptx
+  FORMAT = .pptx
   → Engine A (Python):
-    python references/scripts/export-to-office.py --input <md_file> --format xlsx|pptx --section <letter> --out outputs/
+    python references/scripts/export-to-office.py --input <md_file> --format pptx --out outputs/
 
   FORMAT = .docx:
     Deliverable = BRD / SRS / Executive Report / Solution Recommendation / C-Level Pitch
@@ -136,24 +136,36 @@ When user requests EXPORT:
     → Engine A (Python):
       python references/scripts/export-to-office.py --input <md_file> --format docx --section <letter> --out outputs/
 
-  FALLBACK: If Node.js unavailable → use Engine A for all formats and notify user.
+  FORMAT = .xlsx:
+    Deliverable = Dynamic financial model, cost-benefit analysis, strict color-coded BA matrices
+    → Engine C (Python / openpyxl + recalc.py):
+      1. Write script or logic to output xlsx with openpyxl (adhering to Blue/Black style rules)
+      2. Call formula evaluator: python references/scripts/xlsx-module/recalc.py <excel_file>
+    
+    Deliverable = Simple data dump / flat logs
+    → Engine A (Python):
+      python references/scripts/export-to-office.py --input <md_file> --format xlsx --section <letter> --out outputs/
+
+  FALLBACK: If a specialized engine (B or C) is unavailable on the system → use Engine A for all formats and notify the user.
 ```
 
 ### Engine Capability Comparison
 
-| Capability | Engine A (Python) | Engine B (Node.js) |
-|---|---|---|
-| Formats | `.docx`, `.xlsx`, `.pptx` | `.docx` only |
-| Table of Contents | ❌ | ✅ Auto-generated |
-| Page numbers / header-footer | ❌ | ✅ |
-| OOXML-compliant bullets | ❌ (unicode) | ✅ (LevelFormat.BULLET) |
-| Footnotes / hyperlinks | ❌ | ✅ |
-| BABOK Navy branding | Basic | Full |
-| **Best for** | Excel, PPT, quick drafts | BRD, SRS, Executive reports |
+| Capability | Engine A (Python) | Engine B (Node.js) | Engine C (Python / openpyxl + recalc) |
+|---|---|---|---|
+| Formats | `.docx`, `.xlsx`, `.pptx` | `.docx` only | `.xlsx` only |
+| Table of Contents | ❌ | ✅ Auto-generated | N/A |
+| Page numbers / header-footer | ❌ | ✅ | N/A |
+| Dynamic formula evaluation | ❌ (Written as static strings) | N/A | ✅ (LibreOffice recalculation & safety scan) |
+| Formatting and Styling | Basic | C-Level / Navy Branding | Professional Financial Color Coding (Blue/Black/Yellow) |
+| OOXML-compliant XML | Basic | ✅ (LevelFormat.BULLET) | ✅ (Strict openpyxl structure) |
+| **Best for** | PPT, quick draft exports | BRD, SRS, C-Level Word docs | Cost models, financial calculations, BA matrices |
 
 ### Step 3 — Report Results
 
-Provide the exact path of the generated file in the `outputs/` folder to the user. If Engine B was used, mention that the document includes a clickable Table of Contents and professional header/footer branding.
+Provide the exact path of the generated file in the `outputs/` folder to the user.
+- If Engine B was used, highlight the professional Table of Contents and executive branding.
+- If Engine C was used, highlight that all formulas have been recalculated via LibreOffice and scanned for errors (such as `#DIV/0!`, `#REF!`, or `#VALUE!`).
 
 ---
 

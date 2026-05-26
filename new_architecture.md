@@ -160,17 +160,28 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   ├── scenarios.md              # Sơ đồ tư vấn nhanh giải pháp/định hướng dựa trên câu hỏi thực tế của User.
     │   └── workflow-patterns.md      # Quy trình phối hợp hoạt động BA tùy thuộc phương pháp dự án (Agile / Waterfall / Discovery).
     │
-    └── scripts/                      # Công cụ tự động hóa xuất tài liệu (Dual-Engine Strategy).
+    └── scripts/                      # Công cụ tự động hóa xuất tài liệu (Triple-Engine Strategy).
         ├── export-to-office.py       # ⚙️ Engine A (Python): Convert markdown → .docx/.xlsx/.pptx (basic, fast). Dùng cho Excel, PPT và draft nhanh.
-        └── docx-module/              # 🚀 Engine B (Node.js / docx-js): Xuất .docx chất lượng chuyên nghiệp cho Executive deliverables.
-            ├── README.md             # Module coordinator: Decision rule (Engine A vs B), setup guide, troubleshooting.
-            ├── generate-docx.js      # Main generator: BABOK markdown → Word (TOC, Navy branding, OOXML bullets, page numbers).
-            └── office/               # Utility scripts cho việc chỉnh sửa .docx ở cấp XML (từ @docx-anthropic).
-                ├── unpack.py         # Giải nén .docx ZIP → các file XML được format đẹp để chỉnh sửa thủ công.
-                ├── pack.py           # Đóng gói lại thư mục XML đã chỉnh sửa → file .docx với tự động sửa lỗi.
-                ├── validate.py       # Kiểm tra cấu trúc OOXML Schema + tracked changes (auto-repair).
-                ├── soffice.py        # Convert .docx → PDF hoặc hình ảnh qua LibreOffice (headless).
-                └── comment.py        # Thêm comment/reply vào .docx thông qua XML trực tiếp.
+        ├── docx-module/              # 🚀 Engine B (Node.js / docx-js): Xuất .docx chất lượng chuyên nghiệp cho Executive deliverables.
+        │   ├── README.md             # Module coordinator: Decision rule (Engine A vs B), setup guide, troubleshooting.
+        │   ├── generate-docx.js      # Main generator: BABOK markdown → Word (TOC, Navy branding, OOXML bullets, page numbers).
+        │   └── office/               # Utility scripts cho việc chỉnh sửa .docx ở cấp XML (từ @docx-anthropic).
+        │       ├── unpack.py         # Giải nén .docx ZIP → các file XML được format đẹp để chỉnh sửa thủ công.
+        │       ├── pack.py           # Đóng gói lại thư mục XML đã chỉnh sửa → file .docx với tự động sửa lỗi.
+        │       ├── validate.py       # Kiểm tra cấu trúc OOXML Schema + tracked changes (auto-repair).
+        │       ├── soffice.py        # Convert .docx → PDF hoặc hình ảnh qua LibreOffice (headless).
+        │       └── comment.py        # Thêm comment/reply vào .docx thông qua XML trực tiếp.
+        │
+        └── xlsx-module/              # 📊 Engine C (Python + openpyxl + recalc.py): Thiết lập công thức và tự động recalculate qua LibreOffice cho các báo cáo tài chính/ma trận Excel chuẩn BABOK.
+            ├── README.md             # Module coordinator: Quy tắc Engine C vs A, style guide lập mô hình tài chính, formula checklist.
+            ├── recalc.py             # Script tự động recalculate formulas và quét phát hiện lỗi công thức (#REF!, #DIV/0!,...).
+            └── office/               # Utility scripts cho việc chỉnh sửa .xlsx ở cấp XML (từ @xlsx-anthropic).
+                ├── unpack.py         # Giải nén .xlsx ZIP → các file XML được format đẹp để chỉnh sửa thủ công.
+                ├── pack.py           # Đóng gói lại thư mục XML đã chỉnh sửa → file .xlsx với tự động sửa lỗi.
+                ├── validate.py       # Kiểm tra cấu trúc OOXML Schema.
+                ├── soffice.py        # Quản lý tiến trình LibreOffice (headless) phục vụ tính toán.
+                ├── helpers/          # Các helper xử lý XML runs và simplified redlines.
+                └── validators/       # Các validator kiểm tra schema OOXML chuẩn hóa.
 ```
 
 ---
@@ -202,7 +213,7 @@ Khi điều kiện đầu vào đã sẵn sàng, Agent sẽ phối hợp các te
 ## 🎯 Ghi Chú Dành Cho BA (Người Dùng)
 
 - **Chia sẻ Skill:** Khi bạn chia sẻ thư mục này lên GitHub hoặc clone về máy khác, bạn chỉ cần giữ lại file `SKILL.md` và thư mục `references/`. Hệ thống sẽ tự động nhận diện đầy đủ cấu trúc và hoạt động độc lập mà không phụ thuộc vào bất kỳ đường dẫn vật lý cục bộ nào trên máy cũ của bạn.
-- **Xuất tài liệu Word (.docx):** Hệ thống sử dụng chiến lược Dual-Engine để đảm bảo chất lượng tài liệu phù hợp với từng mục đích:
-  - **Engine A (Python):** `references/scripts/export-to-office.py` — nhanh, hỗ trợ tất cả format (docx/xlsx/pptx), dùng cho draft nội bộ và Excel/PowerPoint.
-  - **Engine B (Node.js):** `references/scripts/docx-module/generate-docx.js` — xuất Word chuyên nghiệp với TOC tự động, header/footer, OOXML bullets chuẩn, BABOK Navy branding. Dùng cho BRD, SRS, Executive Reports và C-Level deliverables.
-  - Xem `references/scripts/docx-module/README.md` để biết quy tắc chọn engine và hướng dẫn cài đặt.
+- **Xuất tài liệu văn phòng (Triple-Engine Strategy):** Hệ thống sử dụng chiến lược 3-Engine để đảm bảo chất lượng tài liệu phù hợp nhất với từng mục đích:
+  - **Engine A (Python):** `references/scripts/export-to-office.py` — nhanh, hỗ trợ tất cả format (docx/xlsx/pptx), dùng cho các bản phác thảo nhanh hoặc slide PowerPoint.
+  - **Engine B (Node.js):** `references/scripts/docx-module/generate-docx.js` — xuất Word (.docx) chuyên nghiệp với TOC tự động, header/footer, OOXML bullets chuẩn, BABOK Navy branding. Dùng cho BRD, SRS, Executive Reports và C-Level deliverables (Xem chỉ dẫn tại `references/scripts/docx-module/README.md`).
+  - **Engine C (Python / openpyxl + recalc.py):** `references/scripts/xlsx-module/recalc.py` — xây dựng các bảng Excel chuyên nghiệp có tích hợp công thức động, tự động tính toán lại giá trị và quét tìm lỗi công thức bằng LibreOffice, đồng thời áp dụng chuẩn phối màu tài chính chuẩn quốc tế (Xem chỉ dẫn tại `references/scripts/xlsx-module/README.md`).
