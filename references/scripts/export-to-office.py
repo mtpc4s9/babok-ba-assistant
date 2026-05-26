@@ -159,8 +159,12 @@ def export_docx(blocks: list[dict], output_path: Path, title: str):
 
         elif b["type"] == "bullet":
             text = clean_text(b["text"])
-            style = "List Bullet 2" if b["level"] > 0 else "List Bullet"
-            doc.add_paragraph(text, style=style)
+            # Enforce hierarchical left indents and clear distinct bullet symbols
+            bullet_symbols = ["●", "○", "■", "▪"]
+            sym = bullet_symbols[min(b["level"], len(bullet_symbols) - 1)]
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Inches(0.25 + b["level"] * 0.25)
+            p.add_run(f"{sym}  {text}")
 
         elif b["type"] == "table":
             headers = [clean_text(h) for h in b["headers"]]

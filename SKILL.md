@@ -113,16 +113,47 @@ When advising or preparing to generate documents, you **MUST** format your conve
 
 ---
 
-## 5. Office Export Rules
+## 5. Office Export Rules (Dual-Engine Strategy)
 
-When the user requests exporting to Microsoft Office formats ("Export", "Generate Word/Excel/PowerPoint file"):
+> **🤖 AI AGENT INSTRUCTION — ENGINE SELECTION:**
+> The BABOK BA Assistant uses **two export engines**. Read `references/scripts/docx-module/README.md` for the complete decision guide. Apply the routing rule below:
 
-*   **Step 1 — Identify Target & Section:** Identify the template file and specific sections to export. Default to `.docx` (Word) unless specified otherwise.
-*   **Step 2 — Execute Export Script:** Use the python export utility with appropriate arguments:
-    *   Word (.docx): `python references/scripts/export-to-office.py --input <md_file> --format docx --section <letter> --out outputs/`
-    *   Excel (.xlsx): `python references/scripts/export-to-office.py --input <md_file> --format xlsx --section <letter> --out outputs/`
-    *   PowerPoint (.pptx): `python references/scripts/export-to-office.py --input <md_file> --format pptx --section <letter> --out outputs/`
-*   **Step 3 — Report Results:** Provide the exact path of the generated file in the `outputs/` folder to the user.
+### Engine Selection Rule
+
+```
+When user requests EXPORT:
+
+  FORMAT = .xlsx or .pptx
+  → Engine A (Python):
+    python references/scripts/export-to-office.py --input <md_file> --format xlsx|pptx --section <letter> --out outputs/
+
+  FORMAT = .docx:
+    Deliverable = BRD / SRS / Executive Report / Solution Recommendation / C-Level Pitch
+    → Engine B (Node.js / docx-js):
+      node references/scripts/docx-module/generate-docx.js --input <md_file> --section <letter> --out outputs/
+
+    Deliverable = Quick Draft / Internal Review / Working Document
+    → Engine A (Python):
+      python references/scripts/export-to-office.py --input <md_file> --format docx --section <letter> --out outputs/
+
+  FALLBACK: If Node.js unavailable → use Engine A for all formats and notify user.
+```
+
+### Engine Capability Comparison
+
+| Capability | Engine A (Python) | Engine B (Node.js) |
+|---|---|---|
+| Formats | `.docx`, `.xlsx`, `.pptx` | `.docx` only |
+| Table of Contents | ❌ | ✅ Auto-generated |
+| Page numbers / header-footer | ❌ | ✅ |
+| OOXML-compliant bullets | ❌ (unicode) | ✅ (LevelFormat.BULLET) |
+| Footnotes / hyperlinks | ❌ | ✅ |
+| BABOK Navy branding | Basic | Full |
+| **Best for** | Excel, PPT, quick drafts | BRD, SRS, Executive reports |
+
+### Step 3 — Report Results
+
+Provide the exact path of the generated file in the `outputs/` folder to the user. If Engine B was used, mention that the document includes a clickable Table of Contents and professional header/footer branding.
 
 ---
 
