@@ -12,16 +12,16 @@ Dưới đây là bản đồ cấu trúc thư mục hiện tại của dự án
 
 ```text
 babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
-├── SKILL.md                          # Trọng tâm điều hướng (Decision tree), quy tắc Tollgate, phản hồi chuẩn hóa & Office Export rules.
+├── SKILL.md                          # Trọng tâm định tuyến chính (Decision tree & Path Maps) — Tinh gọn < 60 dòng.
 ├── new_architecture.md               # Bản đồ cấu trúc và tài liệu kiến trúc thực tế (File này).
 │
 └── references/                       # [Lõi Skill] Thư mục chứa toàn bộ tri thức, quy trình, kỹ thuật và mẫu Markdown di động.
     │
     ├── ka/                           # Các Knowledge Areas (KA) đã được chuẩn hóa. Mỗi KA gồm đúng 6 files đồng nhất.
-    │   │                             # ⚠️ Đọc file theo thứ tự ưu tiên: README -> tasks -> guidelines-tools -> stakeholders -> techniques -> gotchas.
+    │   │                             # ⚠️ Đọc file theo thứ tự ưu tiên: SKILL -> tasks -> guidelines-tools -> stakeholders -> techniques -> gotchas.
     │   │
     │   ├── ka03-planning/            # BA Planning & Monitoring — 5 tasks (3.1–3.5)
-    │   │   ├── README.md             # Tổng quan KA3, danh sách 5 tasks, điều hướng hoạt động lập kế hoạch.
+    │   │   ├── SKILL.md              # MỚI: Micro-orchestrator KA3, danh sách 5 tasks, định tuyến lập kế hoạch.
     │   │   ├── tasks.md              # Chi tiết các Task: Purpose, Inputs, Outputs & liên kết trực tiếp tới templates.
     │   │   ├── guidelines-tools.md   # Pre-flight checklist: Hướng dẫn định hướng và công cụ hỗ trợ cho từng task.
     │   │   ├── stakeholders.md       # Vai trò của stakeholders (Must Have/Should Have) & Approval Authority.
@@ -29,7 +29,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── gotchas.md            # Top bẫy thực tế & sai lầm thường gặp khi lập kế hoạch BA.
     │   │
     │   ├── ka04-elicitation/         # Elicitation & Collaboration — 5 tasks (4.1–4.5)
-    │   │   ├── README.md             # Tổng quan KA4, danh sách 5 tasks, hướng dẫn khơi gợi yêu cầu.
+    │   │   ├── SKILL.md              # MỚI: Micro-orchestrator KA4, danh sách 5 tasks, hướng dẫn khơi gợi yêu cầu.
     │   │   ├── tasks.md              # Chi tiết Tasks: Mục đích, Inputs, Outputs & câu hỏi định hướng.
     │   │   ├── guidelines-tools.md   # Hướng dẫn & Công cụ chuẩn bị trước/trong buổi khơi gợi yêu cầu.
     │   │   ├── stakeholders.md       # Xác định người phỏng vấn/tham dự workshop (Domain SME bắt buộc).
@@ -37,7 +37,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── gotchas.md            # Các bẫy thường gặp trong khơi gợi (như thiên kiến xác nhận, ảo giác yêu cầu).
     │   │
     │   ├── ka05-rlcm/                # Requirements Life Cycle Management — 5 tasks (5.1–5.5)
-    │   │   ├── README.md             # Tổng quan KA5, điều hướng, trạng thái vòng đời yêu cầu (Status Lifecycle Map).
+    │   │   ├── SKILL.md              # MỚI: Micro-orchestrator KA5, điều hướng, trạng thái vòng đời yêu cầu (Status Lifecycle Map).
     │   │   ├── tasks.md              # Chi tiết Tasks: Trace, Maintain, Prioritize, Assess Changes, Approve.
     │   │   ├── guidelines-tools.md   # Hướng dẫn & Công cụ chuẩn bị trước khi cập nhật hay đánh giá thay đổi.
     │   │   ├── stakeholders.md       # Phân bổ vai trò (RACI) & Quyền hạn phê duyệt thay đổi (Change Authority).
@@ -45,7 +45,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── gotchas.md            # Các bẫy thực tế: Bị động trước scope creep, bỏ qua phân tích tác động (impact).
     │   │
     │   ├── ka06-strategy/            # Strategy Analysis — 4 tasks (6.1–6.4)
-    │   │   ├── README.md             # Tổng quan KA6, danh sách 4 tasks, phân tích chiến lược doanh nghiệp.
+    │   │   ├── SKILL.md              # MỚI: Micro-orchestrator KA6, danh sách 4 tasks, phân tích chiến lược doanh nghiệp.
     │   │   ├── tasks.md              # Chi tiết Tasks: Current State, Future State, Risks, Change Strategy.
     │   │   ├── guidelines-tools.md   # Hướng dẫn chiến lược (VD: Corporate Strategy là bắt buộc đối với Task 6.1).
     │   │   ├── stakeholders.md       # Vai trò của stakeholder cấp cao (Sponsor, C-Level) và thẩm quyền phê duyệt.
@@ -53,7 +53,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── gotchas.md            # Các bẫy: Định nghĩa tương lai mơ hồ, bỏ qua trạng thái hiện tại.
     │   │
     │   ├── ka07-radd/                # Requirements Analysis & Design Definition (RADD) — 6 tasks (7.1–7.6)
-    │   │   ├── README.md             # Tổng quan KA7, danh sách 6 tasks, thiết kế & mô hình hóa yêu cầu.
+    │   │   ├── SKILL.md              # MỚI: Micro-orchestrator KA7, danh sách 6 tasks, thiết kế & mô hình hóa yêu cầu.
     │   │   ├── tasks.md              # Chi tiết Tasks: Mô hình hóa, xác thực (Verify/Validate), cấu trúc kiến trúc, đề xuất giải pháp.
     │   │   ├── guidelines-tools.md   # Hướng dẫn kiểm tra chất lượng & mô hình hóa yêu cầu (Solution Scope là bắt buộc).
     │   │   ├── stakeholders.md       # Vai trò của Domain SME, Sponsor trong việc xác thực & phê duyệt thiết kế.
@@ -61,7 +61,7 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   └── gotchas.md            # Lỗi: Yêu cầu không thể kiểm thử (non-verifiable), bỏ qua bước tự audit chất lượng.
     │   │
     │   └── ka08-evaluation/          # Solution Evaluation — 5 tasks (8.1–8.5)
-    │       ├── README.md             # Tổng quan KA8, đo lường và đánh giá giá trị thực tế của giải pháp mang lại.
+    │       ├── SKILL.md              # MỚI: Micro-orchestrator KA8, đo lường và đánh giá giá trị thực tế của giải pháp mang lại.
     │       ├── tasks.md              # Chi tiết các Task: Measure, Analyze, Assess Limitations, Recommend Actions.
     │       ├── guidelines-tools.md   # Hướng dẫn & Công cụ chuẩn bị trước khi đánh giá hiệu suất giải pháp.
     │       ├── stakeholders.md       # Vai trò của stakeholders (Sponsor, End User) & Approval Authority.
@@ -82,11 +82,12 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     ├── techniques/                   # Phân hệ tra cứu nhanh kỹ thuật BABOK V3 theo mục đích sử dụng.
     │   ├── quick-reference.md        # Bảng tra cứu gọn gàng 50 kỹ thuật: ID | Name | When to Use | KA.
     │   ├── by-situation.md           # Hướng dẫn chọn kỹ thuật phù hợp theo tình huống thực tế của doanh nghiệp.
+    │   ├── fallback-rule.md          # MỚI: Quy tắc xử lý khi sử dụng kỹ thuật ngoài Top 20 và phỏng vấn khơi gợi.
     │   └── top-20/                   # Tài liệu hướng dẫn thực thi chuyên sâu cho 20 kỹ thuật cốt lõi và phổ biến nhất.
-	│		├── 10.35-process-modelling                      # Folder chứa các kỹ thuật chuyên sâu thuộc Process Modelling.
-	│		├── 10.47-use-cases-and-scenarios                # Folder chứa các kỹ thuật chuyên sâu thuộc Use Cases Writing Skill.
-	│		├── 10.48-user-stories                           # Folder chứa các kỹ thuật chuyên sâu thuộc Use Stories Writing Skill.
-	│		├── 10.01-acceptance-and-evaluation-criteria.md  # Tiêu chí nghiệm thu và đánh giá.
+    │       ├── 10.35-process-modelling/                     # Folder chứa các kỹ thuật chuyên sâu thuộc Process Modelling.
+    │       ├── 10.47-use-cases-and-scenarios/               # Folder chứa các kỹ thuật chuyên sâu thuộc Use Cases Writing Skill.
+    │       ├── 10.48-user-stories/                          # Folder chứa các kỹ thuật chuyên sâu thuộc User Stories Writing Skill.
+    │       ├── 10.01-acceptance-and-evaluation-criteria.md  # Tiêu chí nghiệm thu và đánh giá.
     │       ├── 10.07-business-cases.md                      # Lập Business Cases tài chính.
     │       ├── 10.08-business-model-canvas.md               # Mô hình kinh doanh Canvas.
     │       ├── 10.09-business-rules-analysis.md             # Phân tích Luật kinh doanh.
@@ -99,18 +100,12 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │       ├── 10.24-interface-analysis.md                  # Phân tích giao tiếp hệ thống.
     │       ├── 10.30-non-functional-requirements-analysis.md # Phân tích yêu cầu phi chức năng (NFR).
     │       ├── 10.34-process-analysis.md                    # Phân tích và tối ưu quy trình.
-    │       ├── 10.35-process-modelling/                     # Thư mục kỹ năng sơ đồ quy trình nghiệp vụ.
     │       ├── 10.40-root-cause-analysis.md                 # Phân tích nguyên nhân gốc rễ (5 Whys, Fishbone).
     │       ├── 10.41-scope-modelling.md                     # Mô hình hóa phạm vi (Context Diagram).
     │       ├── 10.43-stakeholder-list-map-or-personas.md    # Phân tích và lập bản đồ Stakeholders.
-    │       ├── 10.44-state-modelling.md                     # Mô hình hóa trạng thái (State Diagram).
-    │       ├── 10.47-use-cases-and-scenarios/               # Thư mục đặc tả Use Cases và kịch bản nghiệp vụ.
-    │       └── 10.48-user-stories/                          # Thư mục viết và quản lý User Stories chuẩn Agile.
+    │       └── 10.44-state-modelling.md                     # Mô hình hóa trạng thái (State Diagram).
     │
     ├── templates/                    # Khung sườn tài liệu Markdown phân mảnh (Modular Markdown Templates).
-    │   │                             # ⚠️ NGUYÊN TẮC: Chỉ chứa placeholders `[insert]`, không chứa thông tin giả định.
-    │   │                             # AI Agents chỉ sinh phần nội dung (Section) được map với Task, không tạo cả file tràn lan.
-    │   │
     │   ├── ka03/                     # Templates lập kế hoạch BA (Tách biệt thành 5 file độc lập chuẩn hóa)
     │   │   ├── business-analysis-approach.md               # Phương pháp tiếp cận BA (Task 3.1)
     │   │   ├── business-analysis-performance-assessment.md # Đánh giá hiệu suất BA (Task 3.5)
@@ -148,72 +143,48 @@ babok-ba-assistant/ (Thư mục gốc của Skill trên GitHub)
     │   │   ├── design-options.md                           # Xác định và phân bổ các phương án thiết kế (Task 7.5)
     │   │   ├── requirements-architecture.md                # Kiến trúc yêu cầu (Process, Data, Role Views) (Task 7.4)
     │   │   ├── requirements-quality-audit.md               # [Gộp 7.2 & 7.3] QA/QC tự audit chất lượng yêu cầu (Verify & Validate).
-    │   │   ├── solution-recommendation.md                  # Đề xuất giải pháp tối ưu (Thiết kế dạng Slide Pitch cực kỳ ngắn gọn cho Sếp).
+    │   │   ├── solution-recommendation.md                  # Đề xuất giải pháp tối ưu.
     │   │   └── specified-modelled-requirements.md          # Đặc tả yêu cầu kỹ thuật thô sau mô hình hóa (Task 7.1)
     │   │
     │   └── shared/                   # Các mẫu chia sẻ dùng chung giữa các KA (Cross-cutting Templates)
-    │       └── business-rules-catalog.md                   # Từ điển/Mục lục luật kinh doanh tập trung (decoupled) (Technique 10.9). Được load bởi Agent khi cần quản lý luật kinh doanh độc lập cho các đặc tả yêu cầu trong specified-modelled-requirements.md.
+    │       └── business-rules-catalog.md                   # Từ điển/Mục lục luật kinh doanh tập trung (decoupled).
     │
     ├── advisor/                      # Phân hệ cố vấn và điều phối thông minh của AI Agent.
     │   ├── readiness-check.md        # 🚨 MANDATORY Tollgate Checklist. Agent tự chạy trước khi sinh bất kỳ tài liệu nào.
-    │   │                             # Nếu thiếu đầu vào quan trọng -> Bắt buộc dừng lại phỏng vấn User, chống ảo giác.
+    │   │                             # Hỗ trợ cơ chế CBAP Fast-Track cho phép tạo tài liệu ngay.
     │   ├── scenarios.md              # Sơ đồ tư vấn nhanh giải pháp/định hướng dựa trên câu hỏi thực tế của User.
     │   └── workflow-patterns.md      # Quy trình phối hợp hoạt động BA tùy thuộc phương pháp dự án (Agile / Waterfall / Discovery).
     │
     └── scripts/                      # Công cụ tự động hóa xuất tài liệu (Triple-Engine Strategy).
-        ├── export-to-office.py       # ⚙️ Engine A (Python): Convert markdown → .docx/.xlsx/.pptx (basic, fast). Dùng cho Excel, PPT và draft nhanh.
-        ├── docx-module/              # 🚀 Engine B (Node.js / docx-js): Xuất .docx chất lượng chuyên nghiệp cho Executive deliverables.
-        │   ├── README.md             # Module coordinator: Decision rule (Engine A vs B), setup guide, troubleshooting.
-        │   ├── generate-docx.js      # Main generator: BABOK markdown → Word (TOC, Navy branding, OOXML bullets, page numbers).
-        │   └── office/               # Utility scripts cho việc chỉnh sửa .docx ở cấp XML (từ @docx-anthropic).
-        │       ├── unpack.py         # Giải nén .docx ZIP → các file XML được format đẹp để chỉnh sửa thủ công.
-        │       ├── pack.py           # Đóng gói lại thư mục XML đã chỉnh sửa → file .docx với tự động sửa lỗi.
-        │       ├── validate.py       # Kiểm tra cấu trúc OOXML Schema + tracked changes (auto-repair).
-        │       ├── soffice.py        # Convert .docx → PDF hoặc hình ảnh qua LibreOffice (headless).
-        │       └── comment.py        # Thêm comment/reply vào .docx thông qua XML trực tiếp.
+        ├── export-to-office.py       # ⚙️ Engine A (Python): Convert markdown → docx/xlsx/pptx (basic).
+        ├── export-rules.md           # MỚI: Định nghĩa chiến lược Triple-Engine Export (Engine A, B, C).
+        ├── docx-module/              # 🚀 Engine B (Node.js): Xuất .docx chất lượng chuyên nghiệp cho Executive deliverables.
+        │   ├── README.md             # Module coordinator: Decision rule, setup guide, troubleshooting.
+        │   ├── generate-docx.js      # Main generator: BABOK markdown → Word (TOC, Navy branding, XML runs).
+        │   └── office/               # Utility scripts chỉnh sửa .docx ở cấp XML (unpack, pack, validate).
         │
-        └── xlsx-module/              # 📊 Engine C (Python + openpyxl + recalc.py): Thiết lập công thức và tự động recalculate qua LibreOffice cho các báo cáo tài chính/ma trận Excel chuẩn BABOK.
-            ├── README.md             # Module coordinator: Quy tắc Engine C vs A, style guide lập mô hình tài chính, formula checklist.
-            ├── recalc.py             # Script tự động recalculate formulas và quét phát hiện lỗi công thức (#REF!, #DIV/0!,...).
-            └── office/               # Utility scripts cho việc chỉnh sửa .xlsx ở cấp XML (từ @xlsx-anthropic).
-                ├── unpack.py         # Giải nén .xlsx ZIP → các file XML được format đẹp để chỉnh sửa thủ công.
-                ├── pack.py           # Đóng gói lại thư mục XML đã chỉnh sửa → file .xlsx với tự động sửa lỗi.
-                ├── validate.py       # Kiểm tra cấu trúc OOXML Schema.
-                ├── soffice.py        # Quản lý tiến trình LibreOffice (headless) phục vụ tính toán.
-                ├── helpers/          # Các helper xử lý XML runs và simplified redlines.
-                └── validators/       # Các validator kiểm tra schema OOXML chuẩn hóa.
+        └── xlsx-module/              # 📊 Engine C (Python + openpyxl + recalc.py): Tính toán công thức động bằng LibreOffice.
+            ├── README.md             # Module coordinator: Hướng dẫn cài đặt, styling guide, formula verification.
+            └── recalc.py             # Script recalculate công thức và phát hiện lỗi.
 ```
 
 ---
 
-## 🛠️ Quy Trình Vận Hành Của AI Agent (Quy Tắc Thực Tế)
+## 🛠️ Quy Trình Vận Hành Của AI Agent (Quy Tắc Thực Tế Mới)
 
-Để đảm bảo hiệu quả làm việc cao nhất, tiết kiệm token budget và loại bỏ hoàn toàn hiện tượng **ảo giác (hallucination)** hay **bịa đặt thông tin**, AI Agent (chính là bạn, Google Antigravity) phải tuân thủ nghiêm ngặt quy trình 3 bước sau:
+Để đảm bảo hiệu quả làm việc cao nhất, tiết kiệm token budget và loại bỏ hoàn toàn hiện tượng ảo giác, AI Agent (chính là bạn, Google Antigravity) phải tuân thủ nghiêm ngặt quy trình 3 bước sau:
 
-### Bước 1: Nhận diện ngữ cảnh & Tự động tra cứu (File Priority Rule)
-Khi User yêu cầu tư vấn hoặc tạo tài liệu, Agent xác định ngay Task ID và KA tương ứng, truy cập trực tiếp vào `references/ka/[KA-folder]/` để đọc thông tin theo thứ tự ưu tiên:
-1. **`README.md`** -> Đọc trước để lấy bức tranh tổng quan.
-2. **`tasks.md`** -> Đọc để nắm vững đầu vào (Inputs) và đầu ra (Outputs).
-3. **`guidelines-tools.md`** & **`stakeholders.md`** -> Đọc để hiểu các điều kiện biên và nhân sự bắt buộc.
+### Bước 1: Nhận diện ngữ cảnh & Định tuyến qua Micro-orchestrator
+Khi User yêu cầu tư vấn hoặc tạo tài liệu, Agent xác định ngay Task ID và KA tương ứng, truy cập trực tiếp vào `references/ka/[KA-folder]/` để nạp file `SKILL.md` (Micro-orchestrator) và nạp các thông tin phụ trợ theo thứ tự ưu tiên:
+1. **`SKILL.md`** -> Nạp trước để lấy bản đồ định tuyến và quy trình.
+2. **`tasks.md`** -> Nạp để xác định rõ Inputs và Outputs.
+3. **`guidelines-tools.md`** & **`stakeholders.md`** -> Nạp để hiểu điều kiện biên và nhân sự tham dự.
 
-### Bước 2: Chặn chốt kiểm duyệt (Tollgate Readiness Check)
-- Agent bắt buộc phải load `references/advisor/readiness-check.md` để tự kiểm định mức độ sẵn sàng của thông tin.
-- **Nếu thiếu thông tin đầu vào cốt lõi** hoặc **chưa xác định rõ stakeholders phù hợp**: Agent lập tức chuyển sang **Advisory Mode**, dừng việc tạo tài liệu thô, gửi bảng câu hỏi phỏng vấn ngắn (3-5 câu hỏi trọng tâm) đến User nhằm làm rõ thực tế nghiệp vụ.
+### Bước 2: Chặn chốt kiểm duyệt (Tollgate Readiness Check & CBAP Fast-Track)
+*   Agent bắt buộc phải load `references/advisor/readiness-check.md` để tự kiểm định mức độ sẵn sàng của thông tin.
+*   **Cơ chế CBAP Fast-Track:** Nếu Chàng (ở cấp độ chuyên gia/CBAP) tuyên bố đã cung cấp đầy đủ thông tin hoặc prompt chứa nội dung nghiệp vụ chi tiết, Agent sẽ bỏ qua bước dừng lại hỏi, tiến hành tạo tài liệu ngay và ghi nhận các giả định (Assumptions) rõ ràng ở cuối tài liệu.
+*   **Chế độ thông thường:** Nếu thiếu thông tin quan trọng, Agent sẽ dừng lại và gửi bảng câu hỏi phỏng vấn ngắn (3-5 câu) dựa trên `elicitation-interview-playbook.md` để làm rõ.
 
-### Bước 3: Sinh tài liệu cực bộ & Phối hợp QA (Execution & Audit Workflow)
-Khi điều kiện đầu vào đã sẵn sàng, Agent sẽ phối hợp các template để sinh tài liệu theo mô hình khép kín:
-- **Ví dụ với KA7 (RAD):**
-  1. Agent dựa trên thông tin khơi gợi để mô hình hóa yêu cầu thô vào mẫu `specified-modelled-requirements.md` (Task 7.1).
-  2. Ngay lập tức, Agent chạy audit bằng cách load `requirements-quality-audit.md` (Task 7.2/7.3) để tự đánh giá chất lượng yêu cầu vừa viết (đầy đủ, nhất quán, khả thi...).
-  3. Gửi báo cáo audit kèm các điểm [FAIL] (nếu có) để User cùng xem xét và tinh chỉnh lại bản đặc tả thô ở bước 1, tạo nên một chu trình cải tiến khép kín cực kỳ chất lượng.
-  4. Sau đó mới triển khai các bước tiếp theo như thiết kế kiến trúc (`requirements-architecture.md`), đề xuất phương án (`design-options.md`), và trình bày slide Pitch cho Ban giám đốc (`solution-recommendation.md`).
-
----
-
-## 🎯 Ghi Chú Dành Cho BA (Người Dùng)
-
-- **Chia sẻ Skill:** Khi bạn chia sẻ thư mục này lên GitHub hoặc clone về máy khác, bạn chỉ cần giữ lại file `SKILL.md` và thư mục `references/`. Hệ thống sẽ tự động nhận diện đầy đủ cấu trúc và hoạt động độc lập mà không phụ thuộc vào bất kỳ đường dẫn vật lý cục bộ nào trên máy cũ của bạn.
-- **Xuất tài liệu văn phòng (Triple-Engine Strategy):** Hệ thống sử dụng chiến lược 3-Engine để đảm bảo chất lượng tài liệu phù hợp nhất với từng mục đích:
-  - **Engine A (Python):** `references/scripts/export-to-office.py` — nhanh, hỗ trợ tất cả format (docx/xlsx/pptx), dùng cho các bản phác thảo nhanh hoặc slide PowerPoint.
-  - **Engine B (Node.js):** `references/scripts/docx-module/generate-docx.js` — xuất Word (.docx) chuyên nghiệp với TOC tự động, header/footer, OOXML bullets chuẩn, BABOK Navy branding. Dùng cho BRD, SRS, Executive Reports và C-Level deliverables (Xem chỉ dẫn tại `references/scripts/docx-module/README.md`).
-  - **Engine C (Python / openpyxl + recalc.py):** `references/scripts/xlsx-module/recalc.py` — xây dựng các bảng Excel chuyên nghiệp có tích hợp công thức động, tự động tính toán lại giá trị và quét tìm lỗi công thức bằng LibreOffice, đồng thời áp dụng chuẩn phối màu tài chính chuẩn quốc tế (Xem chỉ dẫn tại `references/scripts/xlsx-module/README.md`).
+### Bước 3: Sinh tài liệu cục bộ & Phối hợp QA (Execution & Audit Workflow)
+Khi điều kiện đầu vào đã sẵn sàng (hoặc qua Fast-Track), Agent sẽ phối hợp các template để sinh tài liệu theo mô hình khép kín.
+- Ví dụ với KA7 (RAD): Tạo đặc tả thô (`specified-modelled-requirements.md`), tự động đề xuất chạy audit chất lượng (`requirements-quality-audit.md`), và dùng các điểm [FAIL] để cải tiến đặc tả thô trước khi chuyển giao.
