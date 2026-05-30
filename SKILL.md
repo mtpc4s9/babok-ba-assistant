@@ -8,12 +8,13 @@ description: Use when performing, planning, or executing Business Analysis activ
 This skill acts as the root router for IIBA® BABOK® Guide v3 compliance.
 
 > **⚠️ MANDATORY FIRST ACTION:**
-> Load and execute the readiness checklist from `references/advisor/readiness-check.md` BEFORE generating or designing any deliverables.
+> Perform the Upstream Discovery workflow from `references/advisor/product-discovery/SKILL.md` to verify business context, then execute the readiness checklist from `references/advisor/readiness-check.md` BEFORE generating or designing any deliverables.
 
 ## 1. Session Protocol
-1. Load this root file to identify the target Knowledge Area (KA).
-2. Load the specific KA `SKILL.md` from the Path Map below.
-3. Execute the KA-specific Tollgate and tasks.
+1. Initiate the **Upstream Discovery** phase if the business problem, KPI target, or root causes are not fully defined.
+2. Load this root file to identify the target Knowledge Area (KA).
+3. Load the specific KA `SKILL.md` from the Path Map below.
+4. Execute the KA-specific Tollgate and tasks.
 
 ## 2. Knowledge Areas Path Map
 - **KA03 Planning** → `references/ka/ka03-planning/SKILL.md`
@@ -24,6 +25,7 @@ This skill acts as the root router for IIBA® BABOK® Guide v3 compliance.
 - **KA08 Evaluation** → `references/ka/ka08-evaluation/SKILL.md`
 
 ## 3. Techniques & Decoupled Rules
+- **Upstream Discovery (Pre-Task)** → `references/advisor/product-discovery/SKILL.md`
 - **Situation Diagnosis** → `references/techniques/by-situation.md`
 - **Techniques Quick Reference** → `references/techniques/quick-reference.md`
 - **Deep-Dive Top-20 Techniques** → `references/techniques/top-20/`

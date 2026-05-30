@@ -9,7 +9,11 @@ description: Pre-task checklist (Tollgate) for AI Agent to verify Guidelines, To
 
 ---
 
-## 1. The 4-Point Tollgate Check
+## 1. The 5-Point Tollgate Check
+
+### ✅ 0. Discovery Completeness
+*   **Check:** Has the upstream discovery phase been completed? Are the business goals explicit and measurable? Are the root causes (not just symptoms) identified?
+*   **Action if missing:** HALT document generation. Load `references/advisor/product-discovery/SKILL.md` and initiate the Upstream Discovery workflow to elicit the necessary business context.
 
 ### ✅ 1. Guidelines (Boundaries & Constraints)
 *   **Check:** Do I have the required guiding artifacts (e.g., *Business Analysis Approach*, *Solution Scope*, *Business Policies*) to establish the boundaries for this task?
@@ -35,7 +39,7 @@ description: Pre-task checklist (Tollgate) for AI Agent to verify Guidelines, To
 
 > **💡 EXECUTIVE BYPASS FOR EXPERT USERS:**
 > If the user (acting at the CBAP/Architect level) **explicitly states** that they have provided all necessary business context, inputs, and stakeholders, OR if they provide deep, structured business specifications directly in their prompt, you **MUST FAST-TRACK** execution:
-> 1. **Bypass the Halt/Block actions** for points #1, #2, and #3.
+> 1. **Bypass the Halt/Block actions** for points #0, #1, #2, and #3.
 > 2. **Skip the interactive Elicitation Interview.**
 > 3. **Draft the target deliverable immediately** with high-fidelity, production-grade details.
 > 4. **Document all assumptions** explicitly in an `Assumptions & Contextual Constraints` section at the end of the deliverable.
@@ -46,6 +50,7 @@ description: Pre-task checklist (Tollgate) for AI Agent to verify Guidelines, To
 
 | Tollgate Point | Fail Condition | Non-Fast-Track Required Agent Action |
 | :--- | :--- | :--- |
+| **#0 Discovery** | Upstream business context, measurable goals, or root causes are missing | **HALT** generation. Initiate product discovery using `references/advisor/product-discovery/SKILL.md`. |
 | **#1 Guidelines** | Required guiding artifact is absent | Shift to **Advisory Mode**. Halt document generation. List missing guides. |
 | **#2 Tools / Inputs** | A direct Input or prerequisite Tool is unavailable | **BLOCK** generation. Launch Elicitation Interview or request missing inputs. |
 | **#3 Stakeholders** | A Must Have stakeholder role is unconfirmed | **WARN** the user. Suggest proxies or ask for explicit confirmation to proceed. |
