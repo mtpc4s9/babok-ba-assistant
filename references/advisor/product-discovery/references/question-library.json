@@ -35,6 +35,22 @@
     "Are there historical data retention, archival, or purging policies?"
   ],
 
+  "iGaming": [
+    "What are the regulatory licensing constraints (e.g., MGA, Curacao, PAGCOR, local jurisdictions) and compliance controls (e.g., Responsible Gaming limits, self-exclusion, AML/KYC checks)?",
+    "How is the player wallet architecture integrated (e.g., single seamless wallet vs. product-specific wallets like sportsbook, casino, live dealer)?",
+    "What is the transaction volume and concurrency threshold during peak event windows (e.g., live sports matches, weekend slots)?",
+    "How are game provider integrations (via game aggregator APIs) structured, and what is the latency SLA requirement for round-resolutions?",
+    "What are the player retention KPIs, and is there an automated real-time loyalty, bonusing, or cashback engine involved?"
+  ],
+
+  "online_lottery": [
+    "What is the specific draw mechanism (certified RNG vs. mechanical draw) and how is the draw results distribution audited and verified?",
+    "How are ticket purchase limits, transaction security, and fraud detection (e.g., duplicate tickets, syndicate operations) governed?",
+    "What is the transaction scalability requirement for ticket processing during high-jackpot, pre-draw countdown hours?",
+    "Who owns the payout and tax reconciliation workflow (e.g., auto-payouts for low-tier prizes vs. manual claims/verification for jackpot tier)?",
+    "What channels are supported for ticket sales (web, mobile app, retail agent terminals) and is real-time inventory management required for physical/digital ticket reconciliation?"
+  ],
+
   "reporting": [
     "Who uses the report, and how frequently?",
     "What decision depends on this report?",
